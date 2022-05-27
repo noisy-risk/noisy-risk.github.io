@@ -162,6 +162,44 @@ button {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
 }
 
+button.felicidade {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 3px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+button.felicidade::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+  background-size: 50% 100%;
+  border-radius: inherit;
+}
+
+button.felicidade::before {
+  animation: animate_border .75s linear infinite;
+}
+
+button.felicidade span {
+  border-radius: 3px;
+  position:relative;
+  z-index: 2;
+}
+
+@keyframes animate_border {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .inhegas {
   position:fixed;
   display: none;
