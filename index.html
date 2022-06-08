@@ -580,6 +580,12 @@
         <span class="edge"></span>
         <span class="front"> PESADÃO </span>
       </button>
+	  
+	  <button class="pushable inhegas-button" onClick="play('./audios/viradrop-pesadao-remix-ringtune-mp3cut.mp3')">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front"> PESADÃO REMIX </span>
+      </button>
 
       <button class="pushable" onClick="play('./audios/cu-dando-bote.mp3')">
         <span class="shadow"></span>
@@ -730,7 +736,7 @@
         <span class="edge"></span>
         <span class="front"> HELICOPTER-HELICOPER </span>
       </button>
-
+	  
     </div>
 
     <button type="button" class="collapsible">
@@ -941,6 +947,7 @@
       </button>
     </div>
     <button class="hellbringer" onclick="bringHell()">HELLBRINGER</button>
+    <button class="viveiro" onclick="viveiro()">VIVEIRO</button>
   </div>
 
   <div class="container">
@@ -1052,4 +1059,21 @@
     }, 1000);
   })
 
+  const viveiro = () => {
+    for (let i = 0; i < 10; i++) {
+      console.log(i)
+      var bemTeVi = document.querySelector("#miscDiv > button:nth-child(83) > span.front");
+      var pombo = document.querySelector("#miscDiv > button:nth-child(86) > span.front");
+      let sleepTimeA = Math.floor(20 * Math.random()) * 1000;
+      let sleepTimeB = Math.floor(20 * Math.random()) * 1000;
+      setTimeout(() => {
+        bemTeVi.click();
+        console.log(`Aguardou ${sleepTimeA}...`);
+      }, sleepTimeA);
+      setTimeout(() => {
+        pombo.click();
+        console.log(`Aguardou ${sleepTimeB}...`);
+      }, sleepTimeB);
+    }
+  }
 </script>

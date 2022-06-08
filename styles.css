@@ -232,7 +232,8 @@ button.felicidade span {
 	float: right;
 	position: fixed;
 	bottom: 0;
-	right: 0
+	right: 0;
+  z-index: 1;
 }
 
 .hellbringer:hover {
@@ -242,4 +243,25 @@ button.felicidade span {
 	position: fixed;
 	bottom: 0;
 	right: 0
+}
+
+.viveiro {
+	background-color: transparent;
+  box-shadow: none !important;
+	border: none;
+	color: transparent;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 100px;
+  z-index: 1;
+}
+
+.viveiro:hover {
+	background-color: blue;
+	color: white;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 100px;
 }
