@@ -212,6 +212,12 @@ button.felicidade span {
   height: 200px;
 }
 
+.somedaki {
+  position:fixed;
+  display: none;
+  height: 200px;
+}
+
 .show {
   position:fixed;
   display: block;

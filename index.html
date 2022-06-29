@@ -61,6 +61,11 @@
         <span class="edge"></span>
         <span class="front"> MA LA VI LHO SO </span>
       </button>
+	  <button class="pushable" onClick="play('./audios/linguaniponica.mp3')">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front"> JAPONESADA </span>
+      </button>
     </div>
     <button type="button" class="collapsible">
       <h3>🥥🏖️ Bahiônicos</h3>
@@ -791,6 +796,18 @@
         <span class="edge"></span>
         <span class="front"> SE EU FODO? </span>
       </button>
+	  
+	  <button class="pushable somedaki-button" onClick="play('./audios/some-daki.mp3')">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front"> SÓ ME DA KI </span>
+      </button>
+
+	  <button class="pushable" onClick="play('./audios/supla.mp3')">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front"> SAYAJIN </span>
+      </button>
 
     </div>
 	
@@ -1204,6 +1221,7 @@
     </div>
   </div>
   <img class="inhegas" src="./images/inhegas.jpg" />
+  <img class="somedaki" src="./images/somedaki.png" />
   <img class="fala-lobinho" src="./images/lobinho.png" />
 </body>
 
@@ -1213,9 +1231,13 @@
   var audios = [];
   function play(path, volume = 1) {
     var audio = new Audio(path);
+    var xhr = new XMLHttpRequest();
     audios.push(audio);
     audio.volume = volume;
     audio.play();
+    xhr.open("POST", 'http://risco13-sp01:8128');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({value: path}));
   }
 
   function dorime() {
@@ -1292,6 +1314,16 @@
       inhegas.classList.add("show")
       setTimeout(() => {
         document.querySelector(".inhegas").classList.remove("show")
+      }, 1000);
+    })
+  });
+  
+  document.querySelectorAll(".somedaki-button").forEach((x) => {
+    x.addEventListener('click', () => {
+      const somedaki = document.querySelector(".somedaki");
+      somedaki.classList.add("show")
+      setTimeout(() => {
+        document.querySelector(".somedaki").classList.remove("show")
       }, 1000);
     })
   });
