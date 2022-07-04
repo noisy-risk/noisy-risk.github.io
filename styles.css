@@ -218,6 +218,12 @@ button.felicidade span {
   height: 200px;
 }
 
+.pedro-formiga {
+  position:fixed;
+  display: none;
+  height: 200px;
+}
+
 .show {
   position:fixed;
   display: block;
@@ -274,4 +280,29 @@ button.felicidade span {
 	position: fixed;
 	bottom: 0;
 	right: 100px;
+}
+
+.rio-button {
+  
+}
+
+.riodejaneiro {
+	background-color: transparent;
+  box-shadow: none !important;
+	border: none;
+	color: transparent;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 170px;
+  z-index: 1;
+}
+
+.riodejaneiro:hover {
+	background-color: black;
+	color: white;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 170px;
 }
