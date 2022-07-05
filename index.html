@@ -239,10 +239,9 @@
         synth.speak(utterThis);
       },
       search: () => {
-        var input, filter, div, button, a, i, txtValue;
+        var filter, div, button, i, txtValue;
 
-        input = document.getElementById('myInput');
-        filter = vm.pesquisa;
+        filter = vm.pesquisa.toUpperCase();
         buttons = document.getElementsByClassName("searchable")
         console.log(buttons)
 
