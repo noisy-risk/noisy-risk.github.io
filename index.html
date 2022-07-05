@@ -38,6 +38,26 @@
                     </v-btn>
                   </v-expansion-panel-content>
                 </v-expansion-panel>
+                <v-expansion-panel>
+                  <v-expansion-panel-header>FALAR 🗣</v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    <v-row>
+                      <v-col
+                        cols="12"
+                        sm="8"
+                        md="10"
+                      >
+                        <v-text-field v-model="tts" name="texto" label="Digite um texto!"/>
+                      </v-col>
+                      <v-col
+                        cols="4"
+                        md="2"
+                      >
+                        <v-btn class="mb-1 mr-1 error" @click="falar()">Falar</v-btn>
+                      </v-col>
+                    </v-row>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
               </v-expansion-panels>
             </v-col>
           </v-row>
@@ -191,6 +211,12 @@
       japanTapuiu: () => {
         const tapuius = ["bahia-radio-globo.mp3", "shamisen.mp3", "whatsapp-audio-2020-01-01-at-01_ehgBR2P.mp3"];
         play(tapuius[Math.floor(tapuius.length * Math.random())]);
+      },
+      falar: () => {
+        var texto = vm.tts;
+        var synth = window.speechSynthesis;
+        var utterThis = new SpeechSynthesisUtterance(texto);
+        synth.speak(utterThis);
       },
     }
   })
