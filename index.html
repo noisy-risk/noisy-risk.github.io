@@ -75,6 +75,16 @@
           <v-btn fab dark small @click="hellbringer()">🔥</v-btn>
           <v-btn fab small color="grey" @click="umahoradesilenciointerrompidaporsonsaleatoriamente()">🤫</v-btn>
         </v-speed-dial>
+        <v-snackbar v-model="snackbar.visible" :timeout="snackbar.timeout">
+          {{ snackbar.text }}
+          <template v-slot:action="{ attrs }">
+            <v-btn
+              color="blue"
+              text
+              v-bind="attrs"
+              @click="snackbar.visible = false"
+            >Fechar</v-btn>
+          </template>
       </v-main>
     </v-app>
   </div>
@@ -105,7 +115,11 @@
         transition: 'slide-y-reverse-transition',
       }),
       audios: [],
-      sections: SoundData
+      sections: SoundData,
+      snackbar: {
+        visible: false,
+        timeout: 2000
+      }
     },
     methods: {
       play: function (sound, log = true) {
@@ -145,6 +159,8 @@
       },
       playViveiro: () => {
         const sounds = vm.sections.filter((x) => x.name == 'VIVEIRO')[0].sounds;
+        vm.snackbar.text = `Tocando o viveiro!`;
+        vm.snackbar.visible = true;
         for (let i = 0; i <= 10; i++) {
           const sleepTime = vm.randBetween(1, 10) * 1000;
           const whichOne = vm.randBetween(0, sounds.length - 1);
@@ -156,6 +172,8 @@
       },
       playRioDeJaneiro: () => {
         const sounds = vm.sections.filter((x) => x.name == 'RIO DE JANEIRO')[0].sounds;
+        vm.snackbar.text = `Tocando o Rio de Janeiro!`;
+        vm.snackbar.visible = true;
         for (let i = 0; i <= 10; i++) {
           const sleepTime = vm.randBetween(1, 10) * 1000;
           const whichOne = vm.randBetween(0, sounds.length - 1);
@@ -166,6 +184,8 @@
         }
       },
       hellbringer: () => {
+        vm.snackbar.text = `Eita.`;
+        vm.snackbar.visible = true;
         vm.sections.forEach((section) => {
           section.sounds.forEach((sound) => {
             vm.play(sound.file, log = false);
@@ -175,6 +195,8 @@
       umahoradesilenciointerrompidaporsonsaleatoriamente: () => {
         const sections = vm.sections;
         const allSounds = vm.getAllSounds();
+        vm.snackbar.text = `Hora de silêncio eventualmente interrompida por sons aleatórios agendada!`;
+        vm.snackbar.visible = true;
         var sleepTime = 0;
         while (true) {
           const sleepInterval = vm.randBetween(1, 600000);
