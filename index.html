@@ -33,7 +33,7 @@
                   <v-expansion-panel-content>
                     <image v-if="section.image" :src="section.image" height="60px" style="border-radius: 50%"> </image>
                     <v-btn v-bind:class="item.classes != null ? item.classes : `error`" class="mb-1 mr-1" v-for="item in section.sounds" v-bind:data="item"
-                      v-bind:key="item.key" @click="item.file !== null ? play(item.file) : item.func()">
+                      v-bind:key="item.key" @click="execute(item)">
                       {{ item.name }}
                     </v-btn>
                   </v-expansion-panel-content>
@@ -108,16 +108,24 @@
       sections: SoundData
     },
     methods: {
-      play: function (path, log = true) {
+      play: function (sound, log = true) {
+        const path = sound.file;
         var audio = new Audio("./audios/" + path);
         var xhr = new XMLHttpRequest();
         vm.audios.push(audio);
         audio.play();
         if (log) {
-          console.log('logging ' + path)
+          console.log('logging ' + sound.name)
           xhr.open("POST", 'http://risco13-sp01:8128');
           xhr.setRequestHeader('Content-Type', 'application/json');
-          xhr.send(JSON.stringify({ value: path }));
+          xhr.send(JSON.stringify({ value: sound.name }));
+        }
+      },
+      execute: function (sound, log = true) {
+        if (sound.file != null) {
+          vm.play(sound, log);
+        } else {
+          sound.func();
         }
       },
       getAllSounds: () => {
@@ -182,13 +190,19 @@
           }, sleepTime);
         }
       },
+      playRandomFiles: (name, files) => {
+        const sound = {
+          "name": name,
+          "file": files[vm.randBetween(0, files.length - 1)]}
+        vm.play(sound)
+      },
       dorimeRandom: () => {
         const dorimes = ["dorime.mp3", "dorime-eletro.mp3", "dorime-funk.mp3"];
-        play(dorimes[Math.floor(dorimes.length * Math.random())]);
+        vm.playRandomFiles("DORIME RANDOM ", dorimes);
       },
       japanTapuiu: () => {
         const tapuius = ["bahia-radio-globo.mp3", "shamisen.mp3", "whatsapp-audio-2020-01-01-at-01_ehgBR2P.mp3"];
-        play(tapuius[Math.floor(tapuius.length * Math.random())]);
+        vm.playRandomFiles("SHAMISEN ", tapuius);
       },
       falar: () => {
         var texto = vm.tts;

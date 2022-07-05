@@ -297,7 +297,7 @@ var SoundData = [
         "file": "dilma-estocando-o-vento-remix-by-timbu.mp3"
       },
       {
-        "name": "SHAMISEN",
+        "name": "SHAMISEN ",
         "file": null,
         "func": () => {vm.japanTapuiu()}
       },
