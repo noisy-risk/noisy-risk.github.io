@@ -1,0 +1,308 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+	background-color: #EEE;
+}
+
+.container {
+  display: block;
+  position: relative;
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  text-align: center;
+}
+
+.card {
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 0 0 0 16px;
+  background-color: #FFF;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.card.active {
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 16px;
+  box-shadow: none !important;
+  background-color: white;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: #FFF;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.collapsible.active {
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+  box-shadow: none !important;
+  background-color: white;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+
+/* BUTTON STYLES */
+.pushable {
+  display: inline-block;
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  margin: 10px 0;
+}
+
+.pushable:hover {
+  filter: brightness(110%);
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.pushable:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.pushable:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient( to left, hsl(340deg 100% 16%) 0%, hsl(340deg 100% 32%) 8%, hsl(340deg 100% 32%) 92%, hsl(340deg 100% 16%) 100%);
+}
+
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 12px;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+/* END OF BUTTON STYLES */
+
+input {
+  border: none;
+  width: 800px;
+  border-radius: 4px;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  box-shadow: 0 .5rem 1rem inset rgba(0,0,0,.15) !important;
+}
+
+button {
+  border: none;
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+button.felicidade {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 3px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+button.felicidade::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+  background-size: 50% 100%;
+  border-radius: inherit;
+}
+
+button.felicidade::before {
+  animation: animate_border .75s linear infinite;
+}
+
+button.felicidade span {
+  border-radius: 3px;
+  position:relative;
+  z-index: 2;
+}
+
+@keyframes animate_border {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.inhegas {
+  position:fixed;
+  display: none;
+  height: 200px;
+}
+
+.fala-lobinho {
+  position:fixed;
+  display: none;
+  height: 200px;
+}
+
+.somedaki {
+  position:fixed;
+  display: none;
+  height: 200px;
+}
+
+.pedro-formiga {
+  position:fixed;
+  display: none;
+  height: 200px;
+}
+
+.show {
+  position:fixed;
+  display: block;
+  height: 300px;
+  left: 50%;
+  top:50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-left:-10px;
+  margin-top:-10px;
+}
+
+.hellbringer {
+	background-color: transparent;
+  box-shadow: none !important;
+	border: none;
+	color: transparent;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+  z-index: 1;
+}
+
+.hellbringer:hover {
+	background-color: red;
+	color: white;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 0
+}
+
+.viveiro-button {
+  
+}
+
+.viveiro {
+	background-color: transparent;
+  box-shadow: none !important;
+	border: none;
+	color: transparent;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 100px;
+  z-index: 1;
+}
+
+.viveiro:hover {
+	background-color: blue;
+	color: white;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 100px;
+}
+
+.rio-button {
+  
+}
+
+.riodejaneiro {
+	background-color: transparent;
+  box-shadow: none !important;
+	border: none;
+	color: transparent;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 170px;
+  z-index: 1;
+}
+
+.riodejaneiro:hover {
+	background-color: black;
+	color: white;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 170px;
+}
