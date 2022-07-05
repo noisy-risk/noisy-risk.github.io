@@ -166,7 +166,7 @@
           const sleepTime = vm.randBetween(1, 10) * 1000;
           const whichOne = vm.randBetween(0, sounds.length - 1);
           setTimeout(() => {
-            console.log(`Tocando agora ${whichOne}`)
+            console.log(`Tocando agora ${sounds[whichOne].name}`)
             vm.execute(sounds[whichOne], log = false);
           }, sleepTime);
         }
@@ -179,7 +179,7 @@
           const sleepTime = vm.randBetween(1, 10) * 1000;
           const whichOne = vm.randBetween(0, sounds.length - 1);
           setTimeout(() => {
-            console.log(`Tocando agora ${whichOne}`)
+            console.log(`Tocando agora ${sounds[whichOne].name}`)
             vm.execute(sounds[whichOne], log = false);
           }, sleepTime);
         }
@@ -208,7 +208,7 @@
           const whichOne = vm.randBetween(0, allSounds.length - 1);
           console.log(`Will play ${allSounds[whichOne].name} in ${(sleepTime/60000).toFixed(2)}min (${(sleepInterval/60000).toFixed(2)}min after the previous one)`)
           setTimeout(() => {
-            console.log(`Tocando agora ${whichOne}`)
+            console.log(`Tocando agora ${allSounds[whichOne].name}`)
             vm.execute(allSounds[whichOne], log = false);
           }, sleepTime);
         }
