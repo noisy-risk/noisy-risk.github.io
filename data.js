@@ -39,7 +39,8 @@ var SoundData = [
     "sounds": [
       {
         "name": "RAFAEL ",
-        "file": "rafael_1.mp3"
+        "file": "rafael_1.mp3",
+        "classes": "felicidade"
       },
       {
         "name": "CADE O BAHIANO ",
@@ -122,11 +123,13 @@ var SoundData = [
     "sounds": [
       {
         "name": "FELICIDADE ",
-        "file": "felicidade.mp3"
+        "file": "felicidade.mp3",
+        "classes": "felicidade"
       },
       {
         "name": "CALI A BOQUI ",
-        "file": "caliaboqui.mp3"
+        "file": "caliaboqui.mp3",
+        "classes": "felicidade"
       },
       {
         "name": "BAMBAM ",

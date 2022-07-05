@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="styles_vue.css" rel="stylesheet"" />
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔊</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -33,7 +34,7 @@
                   <v-expansion-panel-header>{{ section.name }}</v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <image v-if="section.image" :src="section.image" height="60px" style="border-radius: 50%"> </image>
-                    <v-btn color="error" class="mb-1 mr-1" v-for="item in section.sounds" v-bind:data="item"
+                    <v-btn v-bind:class="item.classes != null ? item.classes : `error`" class="mb-1 mr-1" v-for="item in section.sounds" v-bind:data="item"
                       v-bind:key="item.key" @click="item.file !== null ? play(item.file) : item.func()">
                       {{ item.name }}
                     </v-btn>
