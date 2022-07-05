@@ -28,11 +28,15 @@
                 <v-icon>mdi-stop</v-icon>
               </v-btn>
               <v-expansion-panels multiple>
+                <v-row
+                no-gutters >
+                  <v-text-field v-model="pesquisa" @keyup="search()" label="PESQUISE BOTÕES"/>
+                </v-row>
                 <v-expansion-panel v-for="section in sections" v-bind:data="section" v-bind:key="section.key">
                   <v-expansion-panel-header>{{ section.name }}</v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <image v-if="section.image" :src="section.image" height="60px" style="border-radius: 50%"> </image>
-                    <v-btn v-bind:class="item.classes != null ? item.classes : `error`" class="mb-1 mr-1" v-for="item in section.sounds" v-bind:data="item"
+                    <v-btn v-bind:class="item.classes != null ? item.classes : `error`" class="mb-1 mr-1 searchable" v-for="item in section.sounds" v-bind:data="item"
                       v-bind:key="item.key" @click="execute(item)">
                       {{ item.name }}
                     </v-btn>
@@ -115,6 +119,7 @@
         transition: 'slide-y-reverse-transition',
       }),
       tts: "",
+      pesquisa: "",
       audios: [],
       sections: SoundData,
       snackbar: {
@@ -233,6 +238,23 @@
         var utterThis = new SpeechSynthesisUtterance(texto);
         synth.speak(utterThis);
       },
+      search: () => {
+        var input, filter, div, button, a, i, txtValue;
+
+        input = document.getElementById('myInput');
+        filter = vm.pesquisa;
+        buttons = document.getElementsByClassName("searchable")
+        console.log(buttons)
+
+        for (i = 0; i < buttons.length; i++) {
+          txtValue = buttons[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            buttons[i].style.display = "";
+          } else {
+            buttons[i].style.display = "none";
+          }
+        }
+      }
     }
   })
 
