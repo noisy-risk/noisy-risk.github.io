@@ -166,7 +166,7 @@
           const whichOne = vm.randBetween(0, sounds.length - 1);
           setTimeout(() => {
             console.log(`Tocando agora ${whichOne}`)
-            vm.play(sounds[whichOne].file, log = false);
+            vm.execute(sounds[whichOne], log = false);
           }, sleepTime);
         }
       },
@@ -179,7 +179,7 @@
           const whichOne = vm.randBetween(0, sounds.length - 1);
           setTimeout(() => {
             console.log(`Tocando agora ${whichOne}`)
-            vm.play(sounds[whichOne].file, log = false);
+            vm.execute(sounds[whichOne], log = false);
           }, sleepTime);
         }
       },
@@ -188,7 +188,7 @@
         vm.snackbar.visible = true;
         vm.sections.forEach((section) => {
           section.sounds.forEach((sound) => {
-            vm.play(sound.file, log = false);
+            vm.execute(sound, log = false);
           })
         })
       },
