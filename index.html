@@ -209,7 +209,7 @@
           console.log(`Will play ${allSounds[whichOne].name} in ${(sleepTime/60000).toFixed(2)}min (${(sleepInterval/60000).toFixed(2)}min after the previous one)`)
           setTimeout(() => {
             console.log(`Tocando agora ${whichOne}`)
-            vm.play(allSounds[whichOne].file, log = false);
+            vm.play(allSounds[whichOne], log = false);
           }, sleepTime);
         }
       },
