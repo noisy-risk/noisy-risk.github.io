@@ -156,7 +156,7 @@
             break;
           }
           const whichOne = vm.randBetween(0, allSounds.length - 1);
-          console.log(`Will play ${allSounds[whichOne].name} in ${sleepTime}ms (${sleepInterval}ms after the previous one)`)
+          console.log(`Will play ${allSounds[whichOne].name} in ${sleepTime/60000}min (${sleepInterval/60000}min after the previous one)`)
           setTimeout(() => {
             console.log(`Tocando agora ${whichOne}`)
             vm.play(allSounds[whichOne].file, log = false);
