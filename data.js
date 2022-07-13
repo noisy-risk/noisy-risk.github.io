@@ -226,7 +226,7 @@ var SoundData = [
       {
         "name": "DORIME RANDOM ",
         "file": null,
-        "func": () => {vm.dorimeRandom()}
+        "func": () => { vm.dorimeRandom() }
       },
       {
         "name": "GLORIA A DEUX ",
@@ -299,7 +299,7 @@ var SoundData = [
       {
         "name": "SHAMISEN ",
         "file": null,
-        "func": () => {vm.japanTapuiu()}
+        "func": () => { vm.japanTapuiu() }
       },
       {
         "name": "I ❤ POBRE ",
@@ -759,6 +759,16 @@ var SoundData = [
     ]
   },
   {
+    "name": "ROGÉRIO SKYLAB",
+    "image": "./images/skylab.png",
+    "sounds": [
+      {
+        "name": "SACANAGEM!",
+        "file": "sacanagem.mp3"
+      },
+    ]
+  },
+  {
     "name": "VIVEIRO",
     "sounds": [
       {
@@ -946,5 +956,47 @@ var SoundData = [
         "file": "flashbang-sound-effect.mp3"
       }
     ]
+  },
+  {
+	"name": "SENHOR POLIGLOTA",
+    "image": "./images/poliglota.png",
+    "sounds": [
+      {
+        "name": "LA PALOMA",
+        "file": "la-paloma.mp3"
+      },
+      {
+        "name": "CAMBOYA",
+        "file": "bandicam-2016-03-23-12-05-52-022-online-audio-converter.mp3"
+      },
+	  {
+        "name": "???",
+        "file": "la_le_ciarce.mp3"
+      },
+	  {
+        "name": "LA QUIOKI",
+        "file": "la_quioki.mp3"
+      },
+	  {
+        "name": "LA PUESO",
+        "file": "la_pueso.mp3"
+      },
+	  {
+        "name": "LA FUESTE",
+        "file": "la_fuerce.mp3"
+      },
+	  {
+        "name": "LA FIESTA",
+        "file": "la_fiesta.mp3"
+      },
+	  {
+        "name": "LA MONI",
+        "file": "la_moni.mp3"
+      },
+	  {
+        "name": "SANDYUITI",
+        "file": "sandiuiche.mp3"
+      }
+	]
   }
 ]

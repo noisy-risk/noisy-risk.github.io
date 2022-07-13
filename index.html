@@ -37,8 +37,8 @@
                 <v-expansion-panel v-for="section in sections" v-bind:data="section" v-bind:key="section.key">
                   <v-expansion-panel-header>{{ section.name }}</v-expansion-panel-header>
                   <v-expansion-panel-content>
-                    <image v-if="section.image" :src="section.image" height="60px" style="border-radius: 50%"> </image>
-                    <v-btn v-bind:class="item.classes != null ? item.classes : `error`" class="mb-1 mr-1 searchable"
+                    <image v-if="section.image" :src="section.image" height="60px" width="60px" style="border-radius: 50%"> </image>
+                    <v-btn v-bind:class="item.classes != null ? item.classes : `primary`" class="mb-1 mr-1 searchable"
                       v-for="item in section.sounds" v-bind:data="item" v-bind:key="item.key" @click="execute(item)">
                       {{ item.name }}
                     </v-btn>
