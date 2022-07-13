@@ -27,10 +27,6 @@ var SoundData = [
       {
         "name": "MA LA VI LHO SO ",
         "file": "qq.mp3"
-      },
-      {
-        "name": "JAPONESADA ",
-        "file": "linguaniponica.mp3"
       }
     ]
   },
@@ -996,6 +992,10 @@ var SoundData = [
 	  {
         "name": "SANDYUITI",
         "file": "sandiuiche.mp3"
+      },
+	  {
+        "name": "JAPONESADA ",
+        "file": "linguaniponica.mp3"
       }
 	]
   }
