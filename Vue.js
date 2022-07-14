@@ -151,6 +151,16 @@ var vm = new Vue({
       vm.snackbar.visible = false;
       vm.snackbar.text = text;
       vm.snackbar.visible = true;
+    },
+    sanduiche: (text) => {
+      vm.play({
+        "name": "SANDUICHE-ICHE ",
+        "file": "sanduiche-iche.mp3"
+      });
+      vm.play({
+        "name": "SANDYUITI",
+        "file": "sandiuiche.mp3"
+      });
     }
   }
 })
