@@ -35,7 +35,10 @@
                   <v-text-field v-model="pesquisa" @keyup="search()" label="PESQUISE BOTÕES" />
                 </v-row>
                 <v-expansion-panel v-for="section in sections" v-bind:data="section" v-bind:key="section.key">
-                  <v-expansion-panel-header>{{ section.name }}</v-expansion-panel-header>
+                  <v-expansion-panel-header>
+                    {{ section.name }} <v-spacer></v-spacer>
+                    <v-chip v-if="section.new" x-small pill color="red" style="max-width: 60px !important" text-color="white"> New! </v-chip>
+                  </v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <image v-if="section.image" :src="section.image" height="60px" width="60px" style="border-radius: 50%"> </image>
                     <v-btn v-bind:class="item.classes != null ? item.classes : `primary`" class="mb-1 mr-1 searchable"

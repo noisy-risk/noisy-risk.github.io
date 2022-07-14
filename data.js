@@ -762,6 +762,45 @@ var SoundData = [
         "name": "SACANAGEM!",
         "file": "sacanagem.mp3"
       },
+      {
+        "name": "QUE MARAVILHA",
+        "file": "maravilha_UruhsNc.mp3"
+      },
+    ]
+  },
+  {
+    "name": "CHOQUE DE CULTURA",
+    "image": "./images/rogerinho.png",
+    "new": true,
+    "sounds": [
+      {
+        "name": "ACHOU ERRADO",
+        "file": "song-achou-errado-otario.mp3"
+      },
+      {
+        "name": "NÃO É UM TRANSFORMERS",
+        "file": "nao-e-um-transformers.mp3"
+      },
+      {
+        "name": "maconha",
+        "file": "isso_eh_maconha.mp3"
+      },
+      {
+        "name": "É DROGA",
+        "file": "eh_droga.mp3"
+      },
+      {
+        "name": "NINGUÉM TRANSA",
+        "file": "choque_67Cv4l3.mp3"
+      },
+      {
+        "name": "GÓTICO",
+        "file": "julinho-da-van-gotico.mp3"
+      },
+      {
+        "name": "PARADOXO",
+        "file": "choque-de-cultura-renan-e-paradoxo-que-chama-isso-ai.mp3"
+      },
     ]
   },
   {
@@ -996,6 +1035,10 @@ var SoundData = [
       {
         "name": "JAPONESADA ",
         "file": "linguaniponica.mp3"
+      },
+      {
+        "name": "NASCI SABENDO ",
+        "file": "sabendoler.mp3"
       }
     ]
   }
