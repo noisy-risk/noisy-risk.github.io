@@ -954,7 +954,7 @@ var SoundData = [
     ]
   },
   {
-	"name": "SENHOR POLIGLOTA",
+    "name": "SENHOR POLIGLOTA",
     "image": "./images/poliglota.png",
     "sounds": [
       {
@@ -965,38 +965,38 @@ var SoundData = [
         "name": "CAMBOYA",
         "file": "bandicam-2016-03-23-12-05-52-022-online-audio-converter.mp3"
       },
-	  {
-        "name": "???",
+      {
+        "name": "LINGUA DAS COBRAS",
         "file": "la_le_ciarce.mp3"
       },
-	  {
+      {
         "name": "LA QUIOKI",
         "file": "la_quioki.mp3"
       },
-	  {
+      {
         "name": "LA PUESO",
         "file": "la_pueso.mp3"
       },
-	  {
+      {
         "name": "LA FUESTE",
         "file": "la_fuerce.mp3"
       },
-	  {
+      {
         "name": "LA FIESTA",
         "file": "la_fiesta.mp3"
       },
-	  {
+      {
         "name": "LA MONI",
         "file": "la_moni.mp3"
       },
-	  {
+      {
         "name": "SANDYUITI",
         "file": "sandiuiche.mp3"
       },
-	  {
+      {
         "name": "JAPONESADA ",
         "file": "linguaniponica.mp3"
       }
-	]
+    ]
   }
 ]
