@@ -30,7 +30,8 @@ var SoundData = [
     ]
   },
   {
-    "name": "🥥🏖️ Bahiônicos",
+    "name": "Bahiônicos",
+    "image": "./images/bahia.png",
     "sounds": [
       {
         "name": "RAFAEL ",
@@ -115,6 +116,7 @@ var SoundData = [
   },
   {
     "name": "MISC",
+    "image": "./images/misc.png",
     "sounds": [
       {
         "name": "FELICIDADE ",
@@ -544,6 +546,7 @@ var SoundData = [
   },
   {
     "name": "AINN",
+    "image": "./images/italo.png",
     "sounds": [
       {
         "name": "CAFEZINHO ",
@@ -569,6 +572,7 @@ var SoundData = [
   },
   {
     "name": "COLONOS",
+    "image": "./images/laranxinha.png",
     "sounds": [
       {
         "name": "TACA-LHE PAU NESTE CARRINHO, MARCOS! ",
@@ -598,6 +602,7 @@ var SoundData = [
   },
   {
     "name": "MEU NOME NÃO É JOHNNY",
+    "image": "./images/jony.png",
     "sounds": [
       {
         "name": "CHINELA VAI CANTAR ",
@@ -631,6 +636,7 @@ var SoundData = [
   },
   {
     "name": "VAI DAR NAMORO",
+    "image": "./images/faro.png",
     "sounds": [
       {
         "name": "TOME ",
@@ -812,6 +818,7 @@ var SoundData = [
   },
   {
     "name": "VIVEIRO",
+    "image": "./images/viveiro.png",
     "sounds": [
       {
         "name": "POMBO ",
