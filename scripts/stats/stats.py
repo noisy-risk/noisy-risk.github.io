@@ -8,6 +8,7 @@ htmldir = r'U:\DEPTO\DTVM RISCO\CONTROLES\SONS\noisy-risk.github.io'
 
 ip2id = {'192.168.36.206': 'LY',
          '192.168.36.198': 'LG',
+         '192.168.36.197': 'LG',
          '192.168.37.15': 'CT',
          '192.168.37.60': 'JP',
          '192.168.37.151': 'CT',
@@ -18,7 +19,9 @@ ip2id = {'192.168.36.206': 'LY',
          '192.168.36.254': 'RR',
          '192.168.37.95': 'TG',
          '192.168.36.202': 'IR',
-         '192.168.37.117': 'RS'}
+         '192.168.37.117': 'RS',
+         '192.168.36.205': 'CT',
+         '192.168.36.243': 'YR'}
 
 # Map: mp3 -> button
 mp32button = dict()
@@ -28,6 +31,7 @@ with open('\\'.join((htmldir, 'data.js')), encoding='utf8') as bf:
     # Clean up
     dss = dss.replace('\n', '')
     dss = dss.replace('null', '"null"')
+    dss = dss.replace('true', '"true"')
     f_idx = dss.find('"func"')
     while f_idx >= 0:
         s_idx = f_idx + dss[f_idx:].find('()')

@@ -1,6 +1,5 @@
 var SoundData = [
   {
-
     "name": "(♥ω♥*) Nipônicos",
     "image": "./images/shamisen.gif",
     "sounds": [
@@ -536,6 +535,10 @@ var SoundData = [
       {
         "name": "AI PAI PARA ",
         "file": "untitled_3p1UhNj.mp3"
+      },
+	  {
+        "name": "ALARMIDAO",
+        "file": "alarme-gemidao.mp3"
       }
     ]
   },
@@ -801,6 +804,10 @@ var SoundData = [
         "name": "PARADOXO",
         "file": "choque-de-cultura-renan-e-paradoxo-que-chama-isso-ai.mp3"
       },
+	  {
+        "name": "AMBIENTE DE MÚSICA",
+        "file": "ambiente-de-musica.mp3"
+      },
     ]
   },
   {
@@ -1033,12 +1040,16 @@ var SoundData = [
         "file": "sandiuiche.mp3"
       },
       {
-        "name": "JAPONESADA ",
+        "name": "JAPONESADA",
         "file": "linguaniponica.mp3"
       },
       {
-        "name": "NASCI SABENDO ",
+        "name": "NASCI SABENDO",
         "file": "sabendoler.mp3"
+      },
+      {
+        "name": "SHALOM",
+        "file": "shalom.mp3"
       }
     ]
   }
