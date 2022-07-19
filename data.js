@@ -129,6 +129,12 @@ var SoundData = [
         "classes": "felicidade"
       },
       {
+        "name": "RISADA RODNEI",
+        "file": "risada_rodnei.mp3",
+		"classes": "felicidade",
+		"release_date": '2022-07-19'
+      },
+      {
         "name": "BAMBAM ",
         "file": "hora-do-show-porra.mp3"
       },
