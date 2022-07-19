@@ -38,7 +38,7 @@
                   <v-expansion-panel-header class="ml-0 pl-2">
                     <v-img v-if="section.image" :src="section.image" height="40px" max-width="40px" style="border-radius: 50%" class="mr-2"> </v-img>
                     {{ section.name }} <v-spacer></v-spacer>
-                    <v-chip v-if="section.new" x-small pill color="red" style="max-width: 60px !important" text-color="white"> New! </v-chip>
+                    <v-chip v-if="section.release_date != null && new Date().getTime() - new Date(section.release_date).getTime() < 7 * 1000 * 60 * 60 * 24 " x-small pill color="red" style="max-width: 60px !important" text-color="white"> New! </v-chip>
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <v-btn v-bind:class="item.classes != null ? item.classes : `primary`" class="mb-1 mr-1 searchable"

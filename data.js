@@ -780,7 +780,7 @@ var SoundData = [
   {
     "name": "CHOQUE DE CULTURA",
     "image": "./images/rogerinho.png",
-    "new": true,
+    "release_date": '2022-07-14',
     "sounds": [
       {
         "name": "ACHOU ERRADO",
