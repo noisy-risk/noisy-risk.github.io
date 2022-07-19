@@ -540,7 +540,8 @@ var SoundData = [
       },
 	  {
         "name": "ALARMIDAO",
-        "file": "alarme-gemidao.mp3"
+        "file": "alarme-gemidao.mp3",
+        "release_date": '2022-07-18'
       }
     ]
   },
@@ -773,7 +774,8 @@ var SoundData = [
       },
       {
         "name": "QUE MARAVILHA",
-        "file": "maravilha_UruhsNc.mp3"
+        "file": "maravilha_UruhsNc.mp3",
+        "release_date": '2022-07-14'
       },
     ]
   },
@@ -784,31 +786,38 @@ var SoundData = [
     "sounds": [
       {
         "name": "ACHOU ERRADO",
-        "file": "song-achou-errado-otario.mp3"
+        "file": "song-achou-errado-otario.mp3",
+        "release_date": '2022-07-14'
       },
       {
         "name": "NÃO É UM TRANSFORMERS",
-        "file": "nao-e-um-transformers.mp3"
+        "file": "nao-e-um-transformers.mp3",
+        "release_date": '2022-07-14'
       },
       {
         "name": "maconha",
-        "file": "isso_eh_maconha.mp3"
+        "file": "isso_eh_maconha.mp3",
+        "release_date": '2022-07-14'
       },
       {
         "name": "É DROGA",
-        "file": "eh_droga.mp3"
+        "file": "eh_droga.mp3",
+        "release_date": '2022-07-14'
       },
       {
         "name": "NINGUÉM TRANSA",
-        "file": "choque_67Cv4l3.mp3"
+        "file": "choque_67Cv4l3.mp3",
+        "release_date": '2022-07-14'
       },
       {
         "name": "GÓTICO",
-        "file": "julinho-da-van-gotico.mp3"
+        "file": "julinho-da-van-gotico.mp3",
+        "release_date": '2022-07-14'
       },
       {
         "name": "PARADOXO",
-        "file": "choque-de-cultura-renan-e-paradoxo-que-chama-isso-ai.mp3"
+        "file": "choque-de-cultura-renan-e-paradoxo-que-chama-isso-ai.mp3",
+        "release_date": '2022-07-14'
       },
 	  {
         "name": "AMBIENTE DE MÚSICA",
