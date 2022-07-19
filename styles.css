@@ -1,3 +1,10 @@
+
+@keyframes animate_border {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .felicidade {
   background-color: rgba(0, 0, 0, 0.192) !important;
   text-decoration: none;
@@ -15,18 +22,15 @@
   height: 100%;
   opacity: 1;
   background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+  animation: animate_border .75s linear infinite !important;
   background-size: 50% 100%;
   border-radius: inherit;
 }
 
-.felicidade::before {
-  animation: animate_border .75s linear infinite !important;
-}
-
-@keyframes animate_border {
-  to {
-    transform: translateX(-50%);
-  }
+@keyframes flashing_red {
+  0%   {background-color:#dd4e44;}
+  50%  {background-color:#f81100;}
+  100% {background-color:#dd4e44;}
 }
 
 .new_exclamation_mark::after {
@@ -38,7 +42,7 @@
   right: -2px;
   shape-outside: ellipse(55% 55%);
   clip-path: ellipse(55% 55%);
-  background-color: #f44336;
+  animation: flashing_red .75s linear infinite !important;
   position: absolute;
   box-shadow: none;
  }
