@@ -41,7 +41,7 @@
                     <v-chip v-if="section.release_date != null && new Date().getTime() - new Date(section.release_date).getTime() < 7 * 1000 * 60 * 60 * 24 " x-small pill color="red" style="max-width: 60px !important" text-color="white"> New! </v-chip>
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
-                    <v-btn v-bind:class="item.classes != null ? item.classes : `primary`" class="mb-1 mr-1 searchable"
+                    <v-btn v-bind:class="item.classes != null ? item.classes : (item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 3 * 1000 * 60 * 60 * 24 ? `error` : `primary`)" class="mb-1 mr-1 searchable"
                       v-for="item in section.sounds" v-bind:data="item" v-bind:key="item.key" @click="execute(item)">
                       {{ item.name }}
                     </v-btn>
