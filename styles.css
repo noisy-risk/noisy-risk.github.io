@@ -28,3 +28,13 @@
     transform: translateX(-50%);
   }
 }
+
+.error::after {
+  content: 'New!';
+  font-size: 8px;
+  display: block;
+  top: 0px;
+  right: 1px;
+  position: absolute;
+  box-shadow: none;
+ }
