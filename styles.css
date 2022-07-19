@@ -28,9 +28,9 @@
 }
 
 @keyframes flashing_red {
-  0%   {background-color:#dd4e44;}
-  50%  {background-color:#f81100;}
-  100% {background-color:#dd4e44;}
+  0%   {background-color:#ce7c76;}
+  50%  {background-color:#ff1100;}
+  100% {background-color:#ce7c76;}
 }
 
 .new_exclamation_mark::after {
