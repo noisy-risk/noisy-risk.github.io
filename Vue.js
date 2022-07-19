@@ -103,7 +103,9 @@ var vm = new Vue({
           break;
         }
         const whichOne = vm.randBetween(0, allSounds.length - 1);
-        console.log(`Will play ${allSounds[whichOne].name} in ${(sleepTime / 60000).toFixed(2)}min (${(sleepInterval / 60000).toFixed(2)}min after the previous one)`)
+        const when = new Date(new Date().getTime() + sleepTime);
+        const whenstr = when.getHours().toString().padStart(2,'0') + ":" + when.getMinutes().toString().padStart(2,'0') + ":" + when.getSeconds().toString().padStart(2,'0')
+        console.log(`Will play ${allSounds[whichOne].name} at ${whenstr} (in ${(sleepTime / 60000).toFixed(2)}min)`)
         setTimeout(() => {
           console.log(`Tocando agora ${allSounds[whichOne].name}`)
           vm.execute(allSounds[whichOne], log = false);
