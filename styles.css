@@ -46,3 +46,11 @@
   position: absolute;
   box-shadow: none;
  }
+
+.v-chip--no-color {
+  animation: flashing_red .75s linear infinite !important;
+}
+
+.v-chip__content {
+  padding: 0px;
+}
