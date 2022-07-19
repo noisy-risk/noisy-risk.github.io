@@ -44,11 +44,8 @@
                     <!-- custom = item.classes != null; -->
                     <!-- isnew = item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 259200000; -->
                     <v-btn v-bind:class="
-                    item.classes != null && !(item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 259200000) ? item.classes : (
-                    item.classes != null &&  (item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 259200000) ? [item.classes, `new_exclamation_mark`] : (
-
-                    !item.classes != null && !(item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 259200000) ? `primary` : (
-                    !item.classes != null &&  (item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 259200000) ? [`error`, `new_exclamation_mark`] : `warn`)))"
+                    [item.classes != null ? item.classes : `primary`,
+                    item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 259200000 ? `new_exclamation_mark` : ``]"
                       class="mb-1 mr-1 searchable"
                       v-for="item in section.sounds" v-bind:data="item" v-bind:key="item.key" @click="execute(item)">
                       {{ item.name }}

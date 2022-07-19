@@ -33,8 +33,12 @@
   content: 'New!';
   font-size: 8px;
   display: block;
-  top: 0px;
-  right: 1px;
+  padding: 1px;
+  top: -2px;
+  right: -2px;
+  shape-outside: ellipse(55% 55%);
+  clip-path: ellipse(55% 55%);
+  background-color: #f44336;
   position: absolute;
   box-shadow: none;
  }
