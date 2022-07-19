@@ -17,6 +17,7 @@ var vm = new Vue({
     tts: "",
     pesquisa: "",
     audios: [],
+    last_cancel: new Date(),
     sections: SoundData,
     snackbar: {
       visible: false,
@@ -55,45 +56,54 @@ var vm = new Vue({
       return Math.floor(Math.random() * (max - min + 1) + min)
     },
     stopAll: () => {
+      vm.last_cancel = new Date().getTime();
       vm.audios.forEach(element => {
         element.pause()
       });
     },
     playViveiro: () => {
       const sounds = vm.sections.filter((x) => x.name == 'VIVEIRO')[0].sounds;
+      const firstWhen = new Date().getTime();
       vm.showSnackBar(`Tocando o viveiro!`);
       for (let i = 0; i <= 10; i++) {
         const sleepTime = vm.randBetween(1, 10) * 1000;
         const whichOne = vm.randBetween(0, sounds.length - 1);
-        setTimeout(() => {
-          console.log(`Tocando agora ${sounds[whichOne].name}`)
-          vm.execute(sounds[whichOne], log = false);
-        }, sleepTime);
+        setTimeout((when) => {
+          if (vm.last_cancel < when) {
+            console.log(`Tocando agora ${sounds[whichOne].name}`)
+            vm.execute(sounds[whichOne], log = false);
+          }
+        }, sleepTime, firstWhen);
       }
     },
     playRioDeJaneiro: () => {
       const sounds = vm.sections.filter((x) => x.name == 'RIO DE JANEIRO')[0].sounds;
+      const firstWhen = new Date().getTime();
       vm.showSnackBar(`Tocando o Rio de Janeiro!`);
       for (let i = 0; i <= 10; i++) {
         const sleepTime = vm.randBetween(1, 10) * 1000;
         const whichOne = vm.randBetween(0, sounds.length - 1);
-        setTimeout(() => {
-          console.log(`Tocando agora ${sounds[whichOne].name}`)
-          vm.execute(sounds[whichOne], log = false);
-        }, sleepTime);
+        setTimeout((when) => {
+          if (vm.last_cancel < when) {
+            console.log(`Tocando agora ${sounds[whichOne].name}`)
+            vm.execute(sounds[whichOne], log = false);
+          }
+        }, sleepTime, firstWhen);
       }
     },
     hellbringer: () => {
       vm.showSnackBar(`Eita.`);
       vm.sections.forEach((section) => {
         section.sounds.forEach((sound) => {
-          vm.execute(sound, log = false);
+          if (vm.last_cancel < new Date().getTime()) {
+            vm.execute(sound, log = false);
+          }
         })
       })
     },
     umahoradesilenciointerrompidaporsonsaleatoriamente: () => {
-      const sections = vm.sections;
       const allSounds = vm.getAllSounds();
+      const firstWhen = new Date().getTime();
       vm.showSnackBar(`Hora de silêncio eventualmente interrompida por sons aleatórios agendada!`);
       var sleepTime = 0;
       while (true) {
@@ -106,10 +116,12 @@ var vm = new Vue({
         const when = new Date(new Date().getTime() + sleepTime);
         const whenstr = when.getHours().toString().padStart(2,'0') + ":" + when.getMinutes().toString().padStart(2,'0') + ":" + when.getSeconds().toString().padStart(2,'0')
         console.log(`Will play at ${whenstr}: ${allSounds[whichOne].name} (in ${(sleepTime / 60000).toFixed(2)}min)`)
-        setTimeout(() => {
-          console.log(`Tocando agora ${allSounds[whichOne].name}`)
-          vm.execute(allSounds[whichOne], log = false);
-        }, sleepTime);
+        setTimeout((when) => {
+          if (vm.last_cancel < when) {
+            console.log(`Tocando agora ${allSounds[whichOne].name}`)
+            vm.execute(allSounds[whichOne], log = false);
+          }
+        }, sleepTime, firstWhen);
       }
     },
     playRandomFiles: (name, files) => {
@@ -134,7 +146,7 @@ var vm = new Vue({
       synth.speak(utterThis);
     },
     search: () => {
-      var filter, div, button, i, txtValue;
+      var filter, i, txtValue;
 
       filter = vm.pesquisa.toUpperCase();
       buttons = document.getElementsByClassName("searchable")
@@ -156,7 +168,7 @@ var vm = new Vue({
     },
     sanduiche: (text) => {
       vm.play({
-        "name": "SANDUICHE-ICHE ",
+        "name": "SANDUICHE-ICHE",
         "file": "sanduiche-iche.mp3"
       });
       vm.play({
