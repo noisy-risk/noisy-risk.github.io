@@ -131,8 +131,8 @@ var SoundData = [
       {
         "name": "RISADA RODNEI",
         "file": "risada_rodnei.mp3",
-		"classes": "felicidade",
-		"release_date": '2022-07-19'
+        "classes": "felicidade",
+        "release_date": '2022-07-19'
       },
       {
         "name": "BAMBAM ",
@@ -544,11 +544,11 @@ var SoundData = [
         "name": "AI PAI PARA ",
         "file": "untitled_3p1UhNj.mp3"
       },
-	  {
+	    {
         "name": "ALARMIDAO",
         "file": "alarme-gemidao.mp3",
         "release_date": '2022-07-18'
-      }
+      }      
     ]
   },
   {
@@ -574,7 +574,7 @@ var SoundData = [
       {
         "name": "COQUINHO ",
         "file": "adoro-um-coquinho.mp3"
-      }
+      },
     ]
   },
   {
@@ -1074,6 +1074,33 @@ var SoundData = [
         "name": "SHALOM",
         "file": "shalom.mp3"
       }
+    ]
+  },
+  {
+    "name": "NEGO BAM",
+    "image": "./images/bam.png",
+    "release_date": '2022-07-21',
+    "sounds": [
+      {
+        "name": "NEGO BAM",
+        "file": "negobam.mp3",
+        "release_date": "2022-07-21"
+      },
+      {
+        "name": "ARQUIVO BAM",
+        "file": "x-files-nego-bam-1.mp3",
+        "release_date": "2022-07-21"
+      },
+      {
+        "name": "SAFADA",
+        "file": "ai-safada.mp3",
+        "release_date": "2022-07-21"
+      },
+      {
+        "name": "AAAAA",
+        "file": "AAAAA.mp3",
+        "release_date": "2022-07-21"
+      },
     ]
   }
 ]
