@@ -548,7 +548,12 @@ var SoundData = [
         "name": "ALARMIDAO",
         "file": "alarme-gemidao.mp3",
         "release_date": '2022-07-18'
-      }      
+      },
+	    {
+        "name": "PARABUAINS",
+        "file": "parabueins.mp3",
+        "release_date": '2022-07-26'
+      },
     ]
   },
   {
