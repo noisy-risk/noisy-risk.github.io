@@ -589,6 +589,11 @@ var SoundData = [
         "file": "snore-mimimimimi.mp3",
         "release_date": '2022-08-05'
       },
+      {
+        "name": "🌩️",
+        "file": "lightning-storm-sound-effect.mp3",
+        "release_date": '2022-08-05'
+      },
     ]
   },
   {
