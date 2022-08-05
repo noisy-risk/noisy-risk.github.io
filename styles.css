@@ -58,3 +58,7 @@
 .ar__uploader {
   display: none;
 }
+
+.ar {
+  width: 100% !important;
+}
