@@ -161,6 +161,19 @@ var vm = new Vue({
         }
       }
     },
+    isTheSoundNew: (item) => {
+      return item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 259200000
+    },
+    howManyNewSounds: (section) => {
+      var qtd = 0
+      section.sounds.forEach((item) => {
+        if (item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 259200000) {
+          qtd += 1
+        }
+      })
+
+      return qtd
+    },
     showSnackBar: (text) => {
       vm.snackbar.visible = false;
       vm.snackbar.text = text;
