@@ -54,3 +54,8 @@
 .v-chip__content {
   padding: 0px;
 }
+
+
+.ar__uploader {
+  display: none;
+}
