@@ -10,6 +10,7 @@
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔊</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <meta charset="UTF-8">
+  <script src="./vue-audio-recorder.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script src="./data.js"></script>
@@ -54,7 +55,7 @@
                   </v-expansion-panel-content>
                 </v-expansion-panel>
                 <v-expansion-panel>
-                  <v-expansion-panel-header>FALAR 🗣</v-expansion-panel-header>
+                  <v-expansion-panel-header>FALAR 🗣 / GRAVAR 🎤</v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <v-row>
                       <v-col cols="12" sm="8" md="10">
@@ -63,6 +64,17 @@
                       <v-col cols="4" md="2">
                         <v-btn class="mb-1 mr-1 error" @click="falar()">Falar</v-btn>
                       </v-col>
+                    </v-row>
+                    <v-row no-gutters>
+                      <audio-recorder
+                      upload-url="some url"
+                      :attempts="3"
+                      :time="2"
+                      :before-recording="callback"
+                      :after-recording="callback"
+                      :before-upload="callback"
+                      :successful-upload="callback"
+                      :failed-upload="callback"/>
                     </v-row>
                   </v-expansion-panel-content>
                 </v-expansion-panel>

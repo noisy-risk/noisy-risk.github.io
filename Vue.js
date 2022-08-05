@@ -1,6 +1,10 @@
+
+Vue.use(VueAudioRecorder)
+
 var vm = new Vue({
   el: '#app',
   vuetify: new Vuetify(),
+  components: {VueAudioRecorder},
   data: {
     fab_specials: () => ({
       direction: 'top',
@@ -25,6 +29,9 @@ var vm = new Vue({
     }
   },
   methods: {
+    callback (msg) {
+      console.debug('Event: ', msg)
+    },
     play: (sound, log = true) => {
       const path = sound.file;
       var audio = new Audio("./audios/" + path);
