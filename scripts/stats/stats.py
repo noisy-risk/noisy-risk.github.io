@@ -48,7 +48,7 @@ with open('\\'.join((htmldir, 'data.js')), encoding='utf8') as bf:
         snds = cat['sounds']
         for sound in snds:
             mp3 = sound['file'].split('.mp3')[0].strip()
-            btn = sound['name'].strip()
+            btn = sound['name'].strip().upper()
             mp32button[mp3] = btn
 
 logs = listdir(logdir)
@@ -64,7 +64,7 @@ for i, lf in enumerate(logs, start=1):
             origin = sp[1].strip() if sp[1].strip().split('.')[
                 0] == '192' else 'NULL'
             rows.append([t.date(), t.hour, t.minute,
-                        ip2id.get(origin, origin), mp32button.get(a, a)])
+                        ip2id.get(origin, origin), mp32button.get(a, a).upper()])
 
 # Raw DataFrame -- last 30 days of log
 df_raw = pd.DataFrame(

@@ -554,6 +554,36 @@ var SoundData = [
         "file": "parabueins.mp3",
         "release_date": '2022-07-26'
       },
+      {
+        "name": "Sensor",
+        "file": "uma-bicha-foi-detectada.mp3",
+        "release_date": '2022-07-27'
+      },
+      {
+        "name": "ROMULO FEAT ROUGE",
+        "file": "assererre.mp3",
+        "release_date": '2022-07-28'
+      },
+      {
+        "name": "Relogio",
+        "file": "relogio.mp3",
+        "release_date": '2022-07-29'
+      },
+      {
+        "name": "menino ou menina",
+        "file": "menino_ou_menina.mp3",
+        "release_date": '2022-07-29'
+      },
+      {
+        "name": "SENTA QUE VEM",
+        "file": "senta_que_la_vem.mp3",
+        "release_date": '2022-08-03'
+      },
+      {
+        "name": "AVAST",
+        "file": "ameaca.mp3",
+        "release_date": '2022-08-04'
+      },
     ]
   },
   {
