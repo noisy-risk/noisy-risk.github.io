@@ -1142,5 +1142,16 @@ var SoundData = [
         "release_date": "2022-07-21"
       },
     ]
+  },
+  {
+    "name": "AUTORAIS",
+    "release_date": '2022-08-05',
+    "sounds": [
+      {
+        "name": "ESSA BOLETA",
+        "file": "essa_boleta.mp3",
+        "release_date": '2022-08-05'
+      },
+    ]
   }
 ]
