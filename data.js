@@ -1145,6 +1145,7 @@ var SoundData = [
   },
   {
     "name": "AUTORAIS",
+	"image": "./images/zoo.png",
     "release_date": '2022-08-05',
     "sounds": [
       {
