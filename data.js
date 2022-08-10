@@ -600,6 +600,11 @@ var SoundData = [
         "file": "nao_entendi.mp3",
         "release_date": '2022-08-08'
       },
+      {
+        "name": "MOTOROLA",
+        "file": "hello-moto-sound-notification.mp3",
+        "release_date": '2022-08-10'
+      },
     ]
   },
   {
