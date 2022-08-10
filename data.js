@@ -402,7 +402,8 @@ var SoundData = [
       },
       {
         "name": "MATADOR DE ONÇA ",
-        "file": "matador-de-onca.mp3"
+        "file": "matador-de-onca.mp3",
+        "texto": "O dia que ver uma onça no meio da mata esturrar, o quete na hora que o barulho mesmo do pipoco come no pé do ouvido, que ela dá um UNHAUUURR-AURRRR, rá! É perigoso, nego treme nas base, se tiver na hora, é perigoso até na calça ele cagar"
       },
       {
         "name": "JOÃO ",
@@ -593,6 +594,11 @@ var SoundData = [
         "name": "🌩️",
         "file": "lightning-storm-sound-effect.mp3",
         "release_date": '2022-08-05'
+      },
+      {
+        "name": "NÃO ENTENDI",
+        "file": "nao_entendi.mp3",
+        "release_date": '2022-08-08'
       },
     ]
   },

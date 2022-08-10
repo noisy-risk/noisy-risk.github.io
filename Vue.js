@@ -34,6 +34,8 @@ var vm = new Vue({
     },
     play: (sound, log = true) => {
       const path = sound.file;
+      if (sound.texto)
+        vm.showSnackBar(sound.texto);
       var audio = new Audio("./audios/" + path);
       var xhr = new XMLHttpRequest();
       vm.audios.push(audio);

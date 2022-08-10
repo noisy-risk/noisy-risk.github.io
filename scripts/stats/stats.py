@@ -53,9 +53,11 @@ with open('\\'.join((htmldir, 'data.js')), encoding='utf8') as bf:
 
 logs = listdir(logdir)
 rows = []
+dref = dt.date.today()
 for i, lf in enumerate(logs, start=1):
-    if i > 30:
-        break
+    lfs = lf.split('.')
+    if len(lfs) == 3 and (dref - dt.date.fromisoformat(lfs[-1])).days > 30:
+        continue
     with open('\\'.join((logdir, lf)), encoding='utf8') as f:
         for l in f:
             sp = l.split('|')
