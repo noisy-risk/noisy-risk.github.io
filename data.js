@@ -401,7 +401,7 @@ var SoundData = [
         "file": "cu-dando-bote.mp3"
       },
       {
-        "name": "MATADOR DE ONÇA ",
+        "name": "MATADOR DE ONÇA 😼",
         "file": "matador-de-onca.mp3",
         "texto": "O dia que ver uma onça no meio da mata esturrar, o quete na hora que o barulho mesmo do pipoco come no pé do ouvido, que ela dá um UNHAUUURR-AURRRR, rá! É perigoso, nego treme nas base, se tiver na hora, é perigoso até na calça ele cagar"
       },
@@ -545,15 +545,10 @@ var SoundData = [
         "name": "AI PAI PARA ",
         "file": "untitled_3p1UhNj.mp3"
       },
-	    {
+      {
         "name": "ALARMIDAO",
         "file": "alarme-gemidao.mp3",
         "release_date": '2022-07-18'
-      },
-	    {
-        "name": "PARABUAINS",
-        "file": "parabueins.mp3",
-        "release_date": '2022-07-26'
       },
       {
         "name": "Sensor",
@@ -881,10 +876,32 @@ var SoundData = [
         "file": "choque-de-cultura-renan-e-paradoxo-que-chama-isso-ai.mp3",
         "release_date": '2022-07-14'
       },
-	  {
+      {
         "name": "AMBIENTE DE MÚSICA",
         "file": "ambiente-de-musica.mp3",
         "release_date": '2022-07-18'
+      },
+    ]
+  },
+  {
+    "name": "CHARLES HENRIQUEPEDIA",
+    "image": "./images/charles-henriquepedia.jpg",
+    "release_date": '2022-08-18',
+    "sounds": [
+      {
+        "name": "ME CONVENCE",
+        "file": "me-convence.mp3",
+        "release_date": "2022-08-18"
+      },
+      {
+        "name": "[SP] COR / [RJ] FLA",
+        "file": "rio-fla-sp-cor.mp3",
+        "release_date": '2022-08-18'
+      },
+      {
+        "name": "RONALDO",
+        "file": "ronaldo-by-charles.mp3",
+        "release_date": '2022-08-18'
       },
     ]
   },
@@ -1160,8 +1177,45 @@ var SoundData = [
     ]
   },
   {
+    "name": "REI DO KUDUAIRO",
+    "image": "./images/kuduro.png",
+    "release_date": '2022-08-23',
+    "sounds": [
+      {
+        "name": "PARABUAINS",
+        "file": "parabueins.mp3",
+        "release_date": '2022-07-26'
+      },
+      {
+        "name": "MASQUEICO",
+        "file": "masqueico.mp3",
+        "release_date": "2022-08-23"
+      },
+	  {
+        "name": "MATEIRE",
+        "file": "vai-me-mateire.mp3",
+        "release_date": "2022-08-23"
+      },
+	  {
+        "name": "VUAIDA",
+        "file": "ai-meu-deus-ai-minha-vuaida.mp3",
+        "release_date": "2022-08-23"
+      },
+	  {
+        "name": "ESTILO",
+        "file": "tudo-pelo-estilo.mp3",
+        "release_date": "2022-08-23"
+      },
+	  {
+        "name": "IAISSU",
+        "file": "nao-faca-iaissu.mp3",
+        "release_date": "2022-08-23"
+      },
+    ]
+  },
+  {
     "name": "AUTORAIS",
-	"image": "./images/zoo.png",
+    "image": "./images/zoo.png",
     "release_date": '2022-08-05',
     "sounds": [
       {
