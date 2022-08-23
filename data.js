@@ -551,6 +551,11 @@ var SoundData = [
         "release_date": '2022-07-18'
       },
       {
+        "name": "PARABUAINS",
+        "file": "parabueins.mp3",
+        "release_date": '2022-07-26'
+      },
+      {
         "name": "Sensor",
         "file": "uma-bicha-foi-detectada.mp3",
         "release_date": '2022-07-27'
