@@ -148,8 +148,9 @@ var vm = new Vue({
       const tapuius = ["bahia-radio-globo.mp3", "shamisen.mp3", "whatsapp-audio-2020-01-01-at-01_ehgBR2P.mp3"];
       vm.playRandomFiles("SHAMISEN ", tapuius);
     },
-    falar: () => {
-      var texto = vm.tts;
+    falar: (texto = null) => {
+      if (texto === undefined || texto === null)
+        var texto = vm.tts;
       var synth = window.speechSynthesis;
       var utterThis = new SpeechSynthesisUtterance(texto);
       synth.speak(utterThis);
@@ -197,6 +198,9 @@ var vm = new Vue({
         "name": "SANDYUITI",
         "file": "sandiuiche.mp3"
       });
+    },
+    joaoGostaNeJoaoJoaoGostaNeNeJoao: () => {
+      vm.falar("João gosta né João, Né joão, você gosta né, joão, joão gosta né");
     }
   }
 })

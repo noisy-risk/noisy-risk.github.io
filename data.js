@@ -1228,6 +1228,12 @@ var SoundData = [
         "file": "essa_boleta.mp3",
         "release_date": '2022-08-05'
       },
+      {
+        "name": "JOÃO GOSTA",
+        "file": null,
+        "func": () => { vm.joaoGostaNeJoaoJoaoGostaNeNeJoao() },
+        "release_date": '2022-08-24'
+      },
     ]
   }
 ]
