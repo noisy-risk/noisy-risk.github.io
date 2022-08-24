@@ -205,7 +205,7 @@ var vm = new Vue({
     joaoRandom: () => {
       vm.falar("");
 
-      const sounds = ["João", "gosta", "né", "João", "João"];
+      const sounds = ["João", "gosta", "né", "você gosta", "né João", "Você gosta né João"];
       const firstWhen = new Date().getTime();
       vm.showSnackBar(`João gosta!`);
       const sleepTime = 0;
