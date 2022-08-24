@@ -1234,6 +1234,12 @@ var SoundData = [
         "func": () => { vm.joaoGostaNeJoaoJoaoGostaNeNeJoao() },
         "release_date": '2022-08-24'
       },
+      {
+        "name": "JOÃO GOSTA RANDOM",
+        "file": null,
+        "func": () => { vm.joaoRandom() },
+        "release_date": '2022-08-24'
+      },
     ]
   }
 ]

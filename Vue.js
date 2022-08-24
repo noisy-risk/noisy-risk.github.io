@@ -201,6 +201,25 @@ var vm = new Vue({
     },
     joaoGostaNeJoaoJoaoGostaNeNeJoao: () => {
       vm.falar("João gosta né João, Né joão, você gosta né, joão, joão gosta né");
+    },
+    joaoRandom: () => {
+      vm.falar("");
+
+      const sounds = ["João", "gosta", "né", "João", "João"];
+      const firstWhen = new Date().getTime();
+      vm.showSnackBar(`João gosta!`);
+      const sleepTime = 0;
+      for (let i = 0; i <= 10; i++) {
+        const whichOne = vm.randBetween(0, sounds.length - 1);
+        setTimeout((when) => {
+          if (vm.last_cancel < when) {
+            let som = sounds[whichOne];
+            console.log(`Tocando agora ${som}`)
+            vm.falar(som);
+          }
+        }, sleepTime, firstWhen);
+      }
+
     }
   }
 })
