@@ -32,38 +32,47 @@ var SoundData = [
   {
     "name": "CR4QU3 N3T0",
     "image": "./images/craque-neto.png",
+    "release_date": '2022-09-06',
     "sounds": [
       {
         "name": "SEVEN BOYS ",
-        "file": "craque_neto_seven_boys.mp3"
+        "file": "craque_neto_seven_boys.mp3",
+        "release_date": '2022-09-06'
       },
       {
         "name": "EU MANJO DEMAIS",
-        "file": "craque_neto_eu_manjo_demais.mp3"
+        "file": "craque_neto_eu_manjo_demais.mp3",
+        "release_date": '2022-09-06'
       },
       {
         "name": "CONVERSA MOLE",
-        "file": "craque_neto_conversa_mole.mp3"
+        "file": "craque_neto_conversa_mole.mp3",
+        "release_date": '2022-09-06'
       },
       {
         "name": "CEIS NUM JOGA NADA",
-        "file": "craque_neto_ceis_num_joga_nada.mp3"
+        "file": "craque_neto_ceis_num_joga_nada.mp3",
+        "release_date": '2022-09-06'
       },
       {
         "name": "EU NÃO JOGO MAIS",
-        "file": "craque_neto_eu_nao_jogo_mais.mp3"
+        "file": "craque_neto_eu_nao_jogo_mais.mp3",
+        "release_date": '2022-09-06'
       },
       {
         "name": "CEIS TÃO DE SACANAGEM",
-        "file": "craque_neto_ceis_tao_de_sacanagem.mp3"
+        "file": "craque_neto_ceis_tao_de_sacanagem.mp3",
+        "release_date": '2022-09-06'
       },
       {
         "name": "PÃO",
-        "file": "craque_neto_pao.mp3"
+        "file": "craque_neto_pao.mp3",
+        "release_date": '2022-09-06'
       },
       {
         "name": "NÃO VAI DAR",
-        "file": "craque_neto_nao_vai_dar.mp3"
+        "file": "craque_neto_nao_vai_dar.mp3",
+        "release_date": '2022-09-06'
       }
     ]
   },
