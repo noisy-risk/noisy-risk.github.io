@@ -247,6 +247,24 @@ var vm = new Vue({
         }, sleepTime, firstWhen);
       }
 
+    },
+    lucasBoloRandom: () => {
+
+      const sounds = ["Lucas", "cadê", "cadê o bolo", "Lucas cadê", "o bolo", "Lucas cadê o bolo"];
+      const firstWhen = new Date().getTime();
+      vm.showSnackBar(`Lucas cadê!`);
+      const sleepTime = 0;
+      for (let i = 0; i <= 10; i++) {
+        const whichOne = vm.randBetween(0, sounds.length - 1);
+        setTimeout(async(when) => {
+          if (vm.last_cancel < when) {
+            let som = sounds[whichOne];
+            console.log(`Tocando agora ${som}`)
+            await vm.falar(som);
+          }
+        }, sleepTime, firstWhen);
+      }
+
     }
   }
 })

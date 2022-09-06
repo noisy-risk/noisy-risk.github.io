@@ -1240,7 +1240,13 @@ var SoundData = [
         "func": () => { vm.joaoRandom() },
         "release_date": '2022-08-24'
       },
-	        {
+      {
+        "name": "LUCAS BOLO RANDOM",
+        "file": null,
+        "func": () => { vm.lucasBoloRandom() },
+        "release_date": '2022-09-06'
+      },
+	    {
         "name": "IRMAOSSSSÃOOO",
         "file": "IRMAOZAO.mp3",
         "release_date": '2022-09-01'
