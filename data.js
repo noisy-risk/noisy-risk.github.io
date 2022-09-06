@@ -30,6 +30,53 @@ var SoundData = [
     ]
   },
   {
+    "name": "CR4QU3 N3T0",
+    "image": "./images/craque-neto.png",
+    "release_date": '2022-09-06',
+    "sounds": [
+      {
+        "name": "SEVEN BOYS ",
+        "file": "craque_neto_seven_boys.mp3",
+        "release_date": '2022-09-06'
+      },
+      {
+        "name": "EU MANJO DEMAIS",
+        "file": "craque_neto_eu_manjo_demais.mp3",
+        "release_date": '2022-09-06'
+      },
+      {
+        "name": "CONVERSA MOLE",
+        "file": "craque_neto_conversa_mole.mp3",
+        "release_date": '2022-09-06'
+      },
+      {
+        "name": "CEIS NUM JOGA NADA",
+        "file": "craque_neto_ceis_num_joga_nada.mp3",
+        "release_date": '2022-09-06'
+      },
+      {
+        "name": "EU NÃO JOGO MAIS",
+        "file": "craque_neto_eu_nao_jogo_mais.mp3",
+        "release_date": '2022-09-06'
+      },
+      {
+        "name": "CEIS TÃO DE SACANAGEM",
+        "file": "craque_neto_ceis_tao_de_sacanagem.mp3",
+        "release_date": '2022-09-06'
+      },
+      {
+        "name": "PÃO",
+        "file": "craque_neto_pao.mp3",
+        "release_date": '2022-09-06'
+      },
+      {
+        "name": "NÃO VAI DAR",
+        "file": "craque_neto_nao_vai_dar.mp3",
+        "release_date": '2022-09-06'
+      }
+    ]
+  },
+  {
     "name": "Bahiônicos",
     "image": "./images/bahia.png",
     "sounds": [
@@ -1196,22 +1243,22 @@ var SoundData = [
         "file": "masqueico.mp3",
         "release_date": "2022-08-23"
       },
-	  {
+      {
         "name": "MATEIRE",
         "file": "vai-me-mateire.mp3",
         "release_date": "2022-08-23"
       },
-	  {
+      {
         "name": "VUAIDA",
         "file": "ai-meu-deus-ai-minha-vuaida.mp3",
         "release_date": "2022-08-23"
       },
-	  {
+      {
         "name": "ESTILO",
         "file": "tudo-pelo-estilo.mp3",
         "release_date": "2022-08-23"
       },
-	  {
+      {
         "name": "IAISSU",
         "file": "nao-faca-iaissu.mp3",
         "release_date": "2022-08-23"
