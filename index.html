@@ -58,10 +58,13 @@
                   <v-expansion-panel-header>FALAR 🗣 / GRAVAR 🎤</v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <v-row>
-                      <v-col cols="12" sm="8" md="10">
+                      <v-col cols="8" sm="6" md="10">
                         <v-text-field v-model="tts" name="texto" label="Digite um texto!" />
                       </v-col>
-                      <v-col cols="4" md="2">
+                      <v-col cols="3" md="1">
+                        <v-select class="" @click="get_all_voices()" @change="set_selected_voice" :items="languages" name="language" ></v-select>
+                      </v-col>
+                      <v-col cols="3" md="1">
                         <v-btn class="mb-1 mr-1 error" @click="falar()">Falar</v-btn>
                       </v-col>
                     </v-row>

@@ -26,7 +26,10 @@ var vm = new Vue({
     snackbar: {
       visible: false,
       timeout: 2000
-    }
+    },
+    languages: [],
+    language: null,
+    _throwawayfirstcall: window.speechSynthesis,
   },
   methods: {
     callback (msg) {
@@ -148,11 +151,33 @@ var vm = new Vue({
       const tapuius = ["bahia-radio-globo.mp3", "shamisen.mp3", "whatsapp-audio-2020-01-01-at-01_ehgBR2P.mp3"];
       vm.playRandomFiles("SHAMISEN ", tapuius);
     },
+    get_all_voices: () => {
+      const synth = window.speechSynthesis;
+      var voices = synth.getVoices();
+      var names = []
+      for (const voice of voices) {
+        names.push(voice.name)
+      }
+      vm.languages = names;
+    },
+    get_voice: (name) => {
+      const synth = window.speechSynthesis;
+      const voices = synth.getVoices();
+      const voice = voices.filter((x) => x.name == name)[0];
+      return voice
+    },
+    set_selected_voice: (language) => {
+      if (language === undefined || language === null)
+        var language = null
+      vm.language = vm.get_voice(language)
+    },
     falar: async (texto = null) => {
       if (texto === undefined || texto === null)
         var texto = vm.tts;
       var synth = window.speechSynthesis;
       var utterThis = new SpeechSynthesisUtterance(texto);
+      if (vm.language !== null)
+        utterThis.voice = vm.language;
       await new Promise((resolve) => {
         utterThis.onend = resolve;
         synth.speak(utterThis);
