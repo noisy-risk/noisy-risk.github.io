@@ -148,12 +148,15 @@ var vm = new Vue({
       const tapuius = ["bahia-radio-globo.mp3", "shamisen.mp3", "whatsapp-audio-2020-01-01-at-01_ehgBR2P.mp3"];
       vm.playRandomFiles("SHAMISEN ", tapuius);
     },
-    falar: (texto = null) => {
+    falar: async (texto = null) => {
       if (texto === undefined || texto === null)
         var texto = vm.tts;
       var synth = window.speechSynthesis;
       var utterThis = new SpeechSynthesisUtterance(texto);
-      synth.speak(utterThis);
+      await new Promise((resolve) => {
+        utterThis.onend = resolve;
+        synth.speak(utterThis);
+      })
     },
     search: () => {
       var filter, i, txtValue;
@@ -203,7 +206,6 @@ var vm = new Vue({
       vm.falar("João gosta né João, Né joão, você gosta né, joão, joão gosta né");
     },
     joaoRandom: () => {
-      vm.falar("");
 
       const sounds = ["João", "gosta", "né", "você gosta", "né João", "Você gosta né João"];
       const firstWhen = new Date().getTime();
@@ -211,11 +213,11 @@ var vm = new Vue({
       const sleepTime = 0;
       for (let i = 0; i <= 10; i++) {
         const whichOne = vm.randBetween(0, sounds.length - 1);
-        setTimeout((when) => {
+        setTimeout(async(when) => {
           if (vm.last_cancel < when) {
             let som = sounds[whichOne];
             console.log(`Tocando agora ${som}`)
-            vm.falar(som);
+            await vm.falar(som);
           }
         }, sleepTime, firstWhen);
       }

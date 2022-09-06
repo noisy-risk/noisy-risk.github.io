@@ -1240,6 +1240,11 @@ var SoundData = [
         "func": () => { vm.joaoRandom() },
         "release_date": '2022-08-24'
       },
+	        {
+        "name": "IRMAOSSSSÃOOO",
+        "file": "IRMAOZAO.mp3",
+        "release_date": '2022-09-01'
+      },
     ]
   }
 ]
