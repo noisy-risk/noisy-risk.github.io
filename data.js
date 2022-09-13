@@ -1229,6 +1229,28 @@ var SoundData = [
     ]
   },
   {
+    "name": "MEMADA",
+    "image": "./images/memada.png",
+    "release_date": '2022-09-13',
+    "sounds": [
+      {
+        "name": "VOCÊ É MEMADA?",
+        "file": "voce_eh_memada.mp3",
+        "release_date": "2022-09-13"
+      },
+      {
+        "name": "SIM",
+        "file": "voce_eh_memada_sim.mp3",
+        "release_date": "2022-09-13"
+      },
+      {
+        "name": "HMM ME APAIXONEI",
+        "file": "voce_eh_memada_humm_me_apaixonei.mp3",
+        "release_date": "2022-09-13"
+      },
+    ]
+  },
+  {
     "name": "REI DO KUDUAIRO",
     "image": "./images/kuduro.png",
     "release_date": '2022-08-23',
