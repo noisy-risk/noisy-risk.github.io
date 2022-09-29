@@ -652,6 +652,11 @@ var SoundData = [
         "file": "hello-moto-sound-notification.mp3",
         "release_date": '2022-08-10'
       },
+      {
+        "name": "CAFUNGA CAREQUINHA",
+        "file": "cafunga-carequinha.mp3",
+        "release_date": '2022-09-27'
+      },
     ]
   },
   {
@@ -1310,7 +1315,7 @@ var SoundData = [
         "release_date": '2022-08-24'
       },
       {
-        "name": "LUCAS BOLO RANDOM",
+        "name": "ERON BOLO RANDOM",
         "file": null,
         "func": () => { vm.lucasBoloRandom() },
         "release_date": '2022-09-06'

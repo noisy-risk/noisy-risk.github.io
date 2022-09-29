@@ -250,9 +250,9 @@ var vm = new Vue({
     },
     lucasBoloRandom: () => {
 
-      const sounds = ["Lucas", "cadê", "cadê o bolo", "Lucas cadê", "o bolo", "Lucas cadê o bolo"];
+      const sounds = ["Eron", "cadê", "cadê a coxinha", "Eron cadê", "a coxinha", "Eron cadê a coxinha"];
       const firstWhen = new Date().getTime();
-      vm.showSnackBar(`Lucas cadê!`);
+      vm.showSnackBar(`Eron cadê!`);
       const sleepTime = 0;
       for (let i = 0; i <= 10; i++) {
         const whichOne = vm.randBetween(0, sounds.length - 1);
