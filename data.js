@@ -657,6 +657,16 @@ var SoundData = [
         "file": "cafunga-carequinha.mp3",
         "release_date": '2022-09-27'
       },
+      {
+        "name": "NÃO SOU NÃO",
+        "file": "agnaldo-timoteo-nao-sou-nao_02.mp3",
+        "release_date": '2022-10-06'
+      },
+      {
+        "name": "SOU APENAS AGNALDO TIMÓTEO",
+        "file": "agnaldo-timoteo-nem-assumido-nem-desassumido.mp3",
+        "release_date": '2022-10-06'
+      },
     ]
   },
   {
