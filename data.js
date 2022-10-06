@@ -1336,5 +1336,37 @@ var SoundData = [
         "release_date": '2022-09-01'
       },
     ]
+  },
+  {
+    "name": "TEMPLATES CUSTOMIZADOS",
+    "image": "./images/gol_tunado.jpg",
+    "release_date": '2022-10-06',
+    "customtxt": true,
+    "sounds": [
+      {
+        "name": "___ GOSTA",
+        "file": null,
+        "func": () => { vm.customGosta() },
+        "release_date": '2022-10-06'
+      },
+      {
+        "name": "___ GOSTA RANDOM",
+        "file": null,
+        "func": () => { vm.customGostaRandom() },
+        "release_date": '2022-10-06'
+      },
+      {
+        "name": "___ BOLO RANDOM",
+        "file": null,
+        "func": () => { vm.customBoloRandom() },
+        "release_date": '2022-10-06'
+      },
+      {
+        "name": "___ COXINHA RANDOM",
+        "file": null,
+        "func": () => { vm.customCoxinhaRandom() },
+        "release_date": '2022-10-06'
+      },
+    ]
   }
 ]

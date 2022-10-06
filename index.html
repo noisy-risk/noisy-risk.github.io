@@ -43,15 +43,18 @@
                     <v-chip v-if="section.release_date != null && new Date().getTime() - new Date(section.release_date).getTime() < 604800000 " x-small pill style="max-width: 90px !important" text-color="white"> NEW SECTION! </v-chip>
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
-                    <!-- custom = item.classes != null; -->
-                    <!-- isnew = item.release_date != null && new Date().getTime() - new Date(item.release_date).getTime() < 259200000; -->
-                    <v-btn v-bind:class="
-                    [item.classes != null ? item.classes : `primary`,
-                    isTheSoundNew(item) ? `new_exclamation_mark` : ``]"
-                      class="mb-1 mr-1 searchable"
-                      v-for="item in section.sounds" v-bind:data="item" v-bind:key="item.key" @click="execute(item)">
-                      {{ item.name }}
-                    </v-btn>
+                    <v-row>
+                      <v-text-field v-if="section.customtxt" v-model="customtxt" v-name="text" label="Digite um texto!" />
+                    </v-row>
+                    <v-row style = "margin-top: 25px">
+                      <v-btn v-bind:class="
+                      [item.classes != null ? item.classes : `primary`,
+                      isTheSoundNew(item) ? `new_exclamation_mark` : ``]"
+                        class="mb-1 mr-1 searchable"
+                        v-for="item in section.sounds" v-bind:data="item" v-bind:key="item.key" @click="execute(item)">
+                        {{ item.name }}
+                      </v-btn>
+                    </v-row>
                   </v-expansion-panel-content>
                 </v-expansion-panel>
                 <v-expansion-panel>

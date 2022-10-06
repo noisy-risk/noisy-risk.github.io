@@ -20,6 +20,7 @@ var vm = new Vue({
     }),
     tts: "",
     pesquisa: "",
+    customtxt: "",
     audios: [],
     last_cancel: new Date(),
     sections: SoundData,
@@ -253,6 +254,66 @@ var vm = new Vue({
       const sounds = ["Eron", "cadê", "cadê a coxinha", "Eron cadê", "a coxinha", "Eron cadê a coxinha"];
       const firstWhen = new Date().getTime();
       vm.showSnackBar(`Eron cadê!`);
+      const sleepTime = 0;
+      for (let i = 0; i <= 10; i++) {
+        const whichOne = vm.randBetween(0, sounds.length - 1);
+        setTimeout(async(when) => {
+          if (vm.last_cancel < when) {
+            let som = sounds[whichOne];
+            console.log(`Tocando agora ${som}`)
+            await vm.falar(som);
+          }
+        }, sleepTime, firstWhen);
+      }
+
+    },
+    customGosta: () => {
+      var custom = vm.customtxt;
+      vm.showSnackBar(`${custom} cadê!`);
+      vm.falar(`${custom} gosta né ${custom}, Né ${custom}, você gosta né, ${custom}, ${custom} gosta né`);
+    },
+    customGostaRandom: () => {
+      var custom = vm.customtxt;
+    
+      const sounds = [custom, "gosta", "né", "você gosta", `né ${custom}`, `Você gosta né ${custom}`];
+      const firstWhen = new Date().getTime();
+      vm.showSnackBar(`${custom} gosta!`);
+      const sleepTime = 0;
+      for (let i = 0; i <= 10; i++) {
+        const whichOne = vm.randBetween(0, sounds.length - 1);
+        setTimeout(async(when) => {
+          if (vm.last_cancel < when) {
+            let som = sounds[whichOne];
+            console.log(`Tocando agora ${som}`)
+            await vm.falar(som);
+          }
+        }, sleepTime, firstWhen);
+      }
+
+    },
+    customBoloRandom: () => {
+      var custom = vm.customtxt;
+      const sounds = [custom, "cadê", "cadê o bolo", `${custom} cadê`, "o bolo", `${custom} cadê o bolo`];
+      const firstWhen = new Date().getTime();
+      vm.showSnackBar(`${custom} cadê!`);
+      const sleepTime = 0;
+      for (let i = 0; i <= 10; i++) {
+        const whichOne = vm.randBetween(0, sounds.length - 1);
+        setTimeout(async(when) => {
+          if (vm.last_cancel < when) {
+            let som = sounds[whichOne];
+            console.log(`Tocando agora ${som}`)
+            await vm.falar(som);
+          }
+        }, sleepTime, firstWhen);
+      }
+
+    },
+    customCoxinhaRandom: () => {
+      var custom = vm.customtxt;
+      const sounds = [custom, "cadê", "cadê a coxinha", `${custom} cadê`, "a coxinha", `${custom} cadê a coxinha`];
+      const firstWhen = new Date().getTime();
+      vm.showSnackBar(`${custom} cadê!`);
       const sleepTime = 0;
       for (let i = 0; i <= 10; i++) {
         const whichOne = vm.randBetween(0, sounds.length - 1);
