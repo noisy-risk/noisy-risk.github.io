@@ -19,6 +19,8 @@ var vm = new Vue({
       transition: 'slide-y-reverse-transition',
     }),
     tts: "",
+    ttsPitch: 1,
+    ttsRate: 1,
     pesquisa: "",
     customtxt: "",
     audios: [],
@@ -181,6 +183,8 @@ var vm = new Vue({
         utterThis.voice = vm.language;
       await new Promise((resolve) => {
         utterThis.onend = resolve;
+        utterThis.pitch = vm.ttsPitch;
+        utterThis.rate = vm.ttsRate;
         synth.speak(utterThis);
       })
     },

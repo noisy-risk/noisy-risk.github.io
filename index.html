@@ -61,12 +61,36 @@
                   <v-expansion-panel-header>FALAR 🗣 / GRAVAR 🎤</v-expansion-panel-header>
                   <v-expansion-panel-content>
                     <v-row>
-                        <v-img src="./images/fisk.jpg" height="90px" max-width="90px" class="mr-2"> </v-img>
-                        <v-select class="" @click="get_all_voices()" @change="set_selected_voice" :items="languages" name="language" ></v-select>
+                      <v-col>
+                        <v-row>
+                          <v-img src="./images/fisk.jpg" height="90px" max-width="90px" class="mr-2"> </v-img>
+                          <v-select class="" @click="get_all_voices()" @change="set_selected_voice" :items="languages" name="language" ></v-select>
+                        </v-row>
+                      </v-col>
+                      <v-col>
+                        <v-col>
+                          VOICE PITCH
+                          <v-text-field
+                            v-model="ttsPitch"
+                            hide-details
+                            single-line
+                            type="number"
+                          />
+                        </v-col>
+                        <v-col>
+                          VOICE RATE
+                          <v-text-field
+                            v-model="ttsRate"
+                            hide-details
+                            single-line
+                            type="number"
+                          />
+                        </v-col>
+                      </v-col>
                     </v-row>
                     <v-row>
                       <v-col cols="12" sm="8" md="10">
-                        <v-text-field v-model="tts" name="texto" label="Digite um texto!" />
+                        <v-text-field v-model="tts" label="Digite um texto!" />
                       </v-col>
                       <v-col cols="4" md="2">
                         <v-btn class="mb-1 mr-1 error" @click="falar()">Falar</v-btn>
