@@ -45,6 +45,8 @@ var vm = new Vue({
       var audio = new Audio("./audios/" + path);
       var xhr = new XMLHttpRequest();
       vm.audios.push(audio);
+      audio.playbackRate = vm.ttsRate;
+      audio.preservesPitch = false;
       audio.play();
       if (log) {
         console.log('logging ' + sound.name)
