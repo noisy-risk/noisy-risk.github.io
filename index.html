@@ -47,13 +47,18 @@
                       <v-text-field v-if="section.customtxt" v-model="customtxt" v-name="text" label="Digite um texto!" />
                     </v-row>
                     <v-row style = "margin-top: 25px">
-                      <v-btn v-bind:class="
-                      [item.classes != null ? item.classes : `primary`,
-                      isTheSoundNew(item) ? `new_exclamation_mark` : ``]"
-                        class="mb-1 mr-1 searchable"
-                        v-for="item in section.sounds" v-bind:data="item" v-bind:key="item.key" @click="execute(item)">
-                        {{ item.name }}
-                      </v-btn>
+                      <div v-for="item in section.sounds">
+                        <v-btn v-bind:class="
+                        [item.classes != null ? item.classes : `primary`,
+                        isTheSoundNew(item) ? `new_exclamation_mark` : ``]"
+                          class="mb-1 mr-1 searchable" v-bind:data="item" v-bind:key="item.key" @click="execute(item)">
+                          {{ item.name }}
+                        </v-btn>
+                        <v-btn v-bind:class="
+                        item.classes != null ? item.classes : `normal`"
+                          class="mb-1 mr-1" 
+                        x-small v-bind:data="item" @click="share(item)">🔗</v-btn>
+                    </div>
                     </v-row>
                   </v-expansion-panel-content>
                 </v-expansion-panel>

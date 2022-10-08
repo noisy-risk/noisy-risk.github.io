@@ -4,7 +4,7 @@ Vue.use(VueAudioRecorder)
 var vm = new Vue({
   el: '#app',
   vuetify: new Vuetify(),
-  components: {VueAudioRecorder},
+  components: { VueAudioRecorder },
   data: {
     fab_specials: () => ({
       direction: 'top',
@@ -35,7 +35,7 @@ var vm = new Vue({
     _throwawayfirstcall: window.speechSynthesis,
   },
   methods: {
-    callback (msg) {
+    callback(msg) {
       console.debug('Event: ', msg)
     },
     play: (sound, log = true) => {
@@ -131,7 +131,7 @@ var vm = new Vue({
         }
         const whichOne = vm.randBetween(0, allSounds.length - 1);
         const when = new Date(new Date().getTime() + sleepTime);
-        const whenstr = when.getHours().toString().padStart(2,'0') + ":" + when.getMinutes().toString().padStart(2,'0') + ":" + when.getSeconds().toString().padStart(2,'0')
+        const whenstr = when.getHours().toString().padStart(2, '0') + ":" + when.getMinutes().toString().padStart(2, '0') + ":" + when.getSeconds().toString().padStart(2, '0')
         console.log(`Will play at ${whenstr}: ${allSounds[whichOne].name} (in ${(sleepTime / 60000).toFixed(2)}min)`)
         setTimeout((when) => {
           if (vm.last_cancel < when) {
@@ -245,7 +245,7 @@ var vm = new Vue({
       const sleepTime = 0;
       for (let i = 0; i <= 10; i++) {
         const whichOne = vm.randBetween(0, sounds.length - 1);
-        setTimeout(async(when) => {
+        setTimeout(async (when) => {
           if (vm.last_cancel < when) {
             let som = sounds[whichOne];
             console.log(`Tocando agora ${som}`)
@@ -263,7 +263,7 @@ var vm = new Vue({
       const sleepTime = 0;
       for (let i = 0; i <= 10; i++) {
         const whichOne = vm.randBetween(0, sounds.length - 1);
-        setTimeout(async(when) => {
+        setTimeout(async (when) => {
           if (vm.last_cancel < when) {
             let som = sounds[whichOne];
             console.log(`Tocando agora ${som}`)
@@ -280,14 +280,14 @@ var vm = new Vue({
     },
     customGostaRandom: () => {
       var custom = vm.customtxt;
-    
+
       const sounds = [custom, "gosta", "né", "você gosta", `né ${custom}`, `Você gosta né ${custom}`];
       const firstWhen = new Date().getTime();
       vm.showSnackBar(`${custom} gosta!`);
       const sleepTime = 0;
       for (let i = 0; i <= 10; i++) {
         const whichOne = vm.randBetween(0, sounds.length - 1);
-        setTimeout(async(when) => {
+        setTimeout(async (when) => {
           if (vm.last_cancel < when) {
             let som = sounds[whichOne];
             console.log(`Tocando agora ${som}`)
@@ -305,7 +305,7 @@ var vm = new Vue({
       const sleepTime = 0;
       for (let i = 0; i <= 10; i++) {
         const whichOne = vm.randBetween(0, sounds.length - 1);
-        setTimeout(async(when) => {
+        setTimeout(async (when) => {
           if (vm.last_cancel < when) {
             let som = sounds[whichOne];
             console.log(`Tocando agora ${som}`)
@@ -323,7 +323,7 @@ var vm = new Vue({
       const sleepTime = 0;
       for (let i = 0; i <= 10; i++) {
         const whichOne = vm.randBetween(0, sounds.length - 1);
-        setTimeout(async(when) => {
+        setTimeout(async (when) => {
           if (vm.last_cancel < when) {
             let som = sounds[whichOne];
             console.log(`Tocando agora ${som}`)
@@ -332,6 +332,25 @@ var vm = new Vue({
         }, sleepTime, firstWhen);
       }
 
+    },
+    share: async (sound) => {
+      const parts = [
+        new Blob(['Parting file'], {
+          type: 'text/plain'
+        }),
+        '',
+        new Uint16Array([33])
+      ]
+      const file = new File(parts, "./audios/" + sound.file, {
+        lastModified: new Date(),
+        type: "audio/mpeg"
+      });
+      await navigator.share({
+        title: sound.name,
+        text: sound.name,
+        url: "https://noisy-risk.github.io/",
+        files: [ file ]
+      })
     }
   }
 })
