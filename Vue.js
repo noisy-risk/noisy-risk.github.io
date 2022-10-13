@@ -38,21 +38,27 @@ var vm = new Vue({
     callback(msg) {
       console.debug('Event: ', msg)
     },
-    play: (sound, log = true) => {
+    play: async (sound, log = true) => {
       const path = sound.file;
       if (sound.texto)
         vm.showSnackBar(sound.texto);
-      var audio = new Audio("./audios/" + path);
-      var xhr = new XMLHttpRequest();
+      var audio = new Audio("./audios_wav/" + path);
       vm.audios.push(audio);
       audio.playbackRate = vm.ttsRate;
       audio.preservesPitch = false;
-      audio.play();
+      console.log(audio)
+      await audio.play();
       if (log) {
-        console.log('logging ' + sound.name)
-        xhr.open("POST", 'http://risco13-sp01:8128');
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.send(JSON.stringify({ value: sound.name }));
+        try {
+          console.log('logging ' + audio)
+          await fetch('http://risco13-sp01:8128', {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ value: sound.name })
+          })
+        } catch (e) {
+          console.log(e)
+        }
       }
     },
     execute: (sound, log = true) => {
@@ -149,11 +155,11 @@ var vm = new Vue({
       vm.play(sound)
     },
     dorimeRandom: () => {
-      const dorimes = ["dorime.mp3", "dorime-eletro.mp3", "dorime-funk.mp3"];
+      const dorimes = ["dorime.wav", "dorime-eletro.wav", "dorime-funk.wav"];
       vm.playRandomFiles("DORIME RANDOM ", dorimes);
     },
     japanTapuiu: () => {
-      const tapuius = ["bahia-radio-globo.mp3", "shamisen.mp3", "whatsapp-audio-2020-01-01-at-01_ehgBR2P.mp3"];
+      const tapuius = ["bahia-radio-globo.wav", "shamisen.wav", "whatsapp-audio-2020-01-01-at-01_ehgBR2P.wav"];
       vm.playRandomFiles("SHAMISEN ", tapuius);
     },
     get_all_voices: () => {
@@ -227,11 +233,11 @@ var vm = new Vue({
     sanduiche: (text) => {
       vm.play({
         "name": "SANDUICHE-ICHE",
-        "file": "sanduiche-iche.mp3"
+        "file": "sanduiche-iche.wav"
       });
       vm.play({
         "name": "SANDYUITI",
-        "file": "sandiuiche.mp3"
+        "file": "sandiuiche.wav"
       });
     },
     joaoGostaNeJoaoJoaoGostaNeNeJoao: () => {
@@ -341,15 +347,15 @@ var vm = new Vue({
         '',
         new Uint16Array([33])
       ]
-      const file = new File(parts, "./audios/" + sound.file, {
+      const file = new File(parts, "./audios_wav/" + sound.file, {
         lastModified: new Date(),
-        type: "audio/mpeg"
+        type: "audio/wav"
       });
       await navigator.share({
         title: sound.name,
         text: sound.name,
         url: "https://noisy-risk.github.io/",
-        files: [ file ]
+        files: [file]
       })
     }
   }
