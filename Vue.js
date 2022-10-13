@@ -38,27 +38,21 @@ var vm = new Vue({
     callback(msg) {
       console.debug('Event: ', msg)
     },
-    play: async (sound, log = true) => {
+    play: (sound, log = true) => {
       const path = sound.file;
       if (sound.texto)
         vm.showSnackBar(sound.texto);
       var audio = new Audio("./audios_opus/" + path);
+      var xhr = new XMLHttpRequest();
       vm.audios.push(audio);
       audio.playbackRate = vm.ttsRate;
       audio.preservesPitch = false;
-      console.log(audio)
-      await audio.play();
+      audio.play();
       if (log) {
-        try {
-          console.log('logging ' + audio)
-          await fetch('http://risco13-sp01:8128', {
-            method: "POST",
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ value: sound.name })
-          })
-        } catch (e) {
-          console.log(e)
-        }
+        console.log('logging ' + sound.name)
+        xhr.open("POST", 'http://risco13-sp01:8128');
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({ value: sound.name }));
       }
     },
     execute: (sound, log = true) => {
@@ -339,7 +333,7 @@ var vm = new Vue({
       }
 
     },
-    share: (sound) => {
+    share: async (sound) => {
       const parts = [
         new Blob(['Parting file'], {
           type: 'text/plain'
@@ -349,9 +343,9 @@ var vm = new Vue({
       ]
       const file = new File(parts, "./audios_opus/" + sound.file, {
         lastModified: new Date(),
-        type: "audio/opus"
+        type: "audio/ogg"
       });
-      navigator.share({
+      await navigator.share({
         title: sound.name,
         text: sound.name,
         url: "https://noisy-risk.github.io/",
