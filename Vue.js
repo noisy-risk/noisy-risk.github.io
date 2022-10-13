@@ -351,7 +351,7 @@ var vm = new Vue({
         lastModified: new Date(),
         type: "audio/opus"
       });
-      await navigator.share({
+      navigator.share({
         title: sound.name,
         text: sound.name,
         url: "https://noisy-risk.github.io/",
