@@ -339,7 +339,7 @@ var vm = new Vue({
       }
 
     },
-    share: async (sound) => {
+    share: (sound) => {
       const parts = [
         new Blob(['Parting file'], {
           type: 'text/plain'
