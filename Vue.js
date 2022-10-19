@@ -42,7 +42,7 @@ var vm = new Vue({
       const path = sound.file;
       if (sound.texto)
         vm.showSnackBar(sound.texto);
-      var audio = new Audio("./audios_opus/" + path);
+      var audio = new Audio("./audios/" + path);
       var xhr = new XMLHttpRequest();
       vm.audios.push(audio);
       audio.playbackRate = vm.ttsRate;
@@ -149,11 +149,11 @@ var vm = new Vue({
       vm.play(sound)
     },
     dorimeRandom: () => {
-      const dorimes = ["dorime.opus", "dorime-eletro.opus", "dorime-funk.opus"];
+      const dorimes = ["dorime.mp3", "dorime-eletro.mp3", "dorime-funk.mp3"];
       vm.playRandomFiles("DORIME RANDOM ", dorimes);
     },
     japanTapuiu: () => {
-      const tapuius = ["bahia-radio-globo.opus", "shamisen.opus", "whatsapp-audio-2020-01-01-at-01_ehgBR2P.opus"];
+      const tapuius = ["bahia-radio-globo.mp3", "shamisen.mp3", "whatsapp-audio-2020-01-01-at-01_ehgBR2P.mp3"];
       vm.playRandomFiles("SHAMISEN ", tapuius);
     },
     get_all_voices: () => {
@@ -227,11 +227,11 @@ var vm = new Vue({
     sanduiche: (text) => {
       vm.play({
         "name": "SANDUICHE-ICHE",
-        "file": "sanduiche-iche.opus"
+        "file": "sanduiche-iche.mp3"
       });
       vm.play({
         "name": "SANDYUITI",
-        "file": "sandiuiche.opus"
+        "file": "sandiuiche.mp3"
       });
     },
     joaoGostaNeJoaoJoaoGostaNeNeJoao: () => {
@@ -341,9 +341,9 @@ var vm = new Vue({
         '',
         new Uint16Array([33])
       ]
-      const file = new File(parts, "./audios_opus/" + sound.file, {
+      const file = new File(parts, "./audios/" + sound.file, {
         lastModified: new Date(),
-        type: "audio/ogg"
+        type: "audio/mpeg"
       });
       await navigator.share({
         title: sound.name,
