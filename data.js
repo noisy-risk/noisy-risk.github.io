@@ -5,27 +5,27 @@ var SoundData = [
     "sounds": [
       {
         "name": "SHAMISEN ",
-        "file": "shamisen.opus"
+        "file": "shamisen.mp3"
       },
       {
         "name": "PQ NAO TRABALHA",
-        "file": "vai-tomar-sua-cu (1).opus"
+        "file": "vai-tomar-sua-cu (1).mp3"
       },
       {
         "name": "TOKYO DRIFT",
-        "file": "tokyo-drift.opus"
+        "file": "tokyo-drift.mp3"
       },
       {
         "name": "YOOOOOOOO",
-        "file": "81211466_808590029615878_4790478785875513061_n-online-audio-converter.opus"
+        "file": "81211466_808590029615878_4790478785875513061_n-online-audio-converter.mp3"
       },
       {
         "name": "OMAE WA",
-        "file": "omae-wa.opus"
+        "file": "omae-wa.mp3"
       },
       {
         "name": "MA LA VI LHO SO ",
-        "file": "qq.opus"
+        "file": "qq.mp3"
       }
     ]
   },
@@ -36,42 +36,42 @@ var SoundData = [
     "sounds": [
       {
         "name": "SEVEN BOYS ",
-        "file": "craque_neto_seven_boys.opus",
+        "file": "craque_neto_seven_boys.mp3",
         "release_date": '2022-09-06'
       },
       {
         "name": "EU MANJO DEMAIS",
-        "file": "craque_neto_eu_manjo_demais.opus",
+        "file": "craque_neto_eu_manjo_demais.mp3",
         "release_date": '2022-09-06'
       },
       {
         "name": "CONVERSA MOLE",
-        "file": "craque_neto_conversa_mole.opus",
+        "file": "craque_neto_conversa_mole.mp3",
         "release_date": '2022-09-06'
       },
       {
         "name": "CEIS NUM JOGA NADA",
-        "file": "craque_neto_ceis_num_joga_nada.opus",
+        "file": "craque_neto_ceis_num_joga_nada.mp3",
         "release_date": '2022-09-06'
       },
       {
         "name": "EU NÃO JOGO MAIS",
-        "file": "craque_neto_eu_nao_jogo_mais.opus",
+        "file": "craque_neto_eu_nao_jogo_mais.mp3",
         "release_date": '2022-09-06'
       },
       {
         "name": "CEIS TÃO DE SACANAGEM",
-        "file": "craque_neto_ceis_tao_de_sacanagem.opus",
+        "file": "craque_neto_ceis_tao_de_sacanagem.mp3",
         "release_date": '2022-09-06'
       },
       {
         "name": "PÃO",
-        "file": "craque_neto_pao.opus",
+        "file": "craque_neto_pao.mp3",
         "release_date": '2022-09-06'
       },
       {
         "name": "NÃO VAI DAR",
-        "file": "craque_neto_nao_vai_dar.opus",
+        "file": "craque_neto_nao_vai_dar.mp3",
         "release_date": '2022-09-06'
       }
     ]
@@ -82,28 +82,28 @@ var SoundData = [
     "sounds": [
       {
         "name": "RAFAEL ",
-        "file": "rafael_1.opus",
+        "file": "rafael_1.mp3",
         "classes": "felicidade"
       },
       {
         "name": "CADE O BAHIANO ",
-        "file": "cadeobahiano.opus"
+        "file": "cadeobahiano.mp3"
       },
       {
         "name": "DRAGAO BAIANO ",
-        "file": "bahianoq.opus"
+        "file": "bahianoq.mp3"
       },
       {
         "name": "BAIANO NAO ",
-        "file": "giva-bahia-online-audio-converter.opus"
+        "file": "giva-bahia-online-audio-converter.mp3"
       },
       {
         "name": "!!! BAHIA !!! ",
-        "file": "bahia-radio-globo.opus"
+        "file": "bahia-radio-globo.mp3"
       },
       {
         "name": "!!! FDP !!! ",
-        "file": "whatsapp-audio-2020-01-01-at-01_ehgBR2P.opus"
+        "file": "whatsapp-audio-2020-01-01-at-01_ehgBR2P.mp3"
       }
     ]
   },
@@ -112,52 +112,57 @@ var SoundData = [
     "image": "./images/sbt.jpg",
     "sounds": [
       {
+        "name": "CEGO DOS OLHOS ",
+        "file": "cegodosolhos.mp3",
+        "release_date": '2022-10-19'
+      },
+      {
         "name": "PARABENS PAPAI ",
-        "file": "parabens-papai.opus"
+        "file": "parabens-papai.mp3"
       },
       {
         "name": "RAPAZZZ ",
-        "file": "rapaz.opus"
+        "file": "rapaz.mp3"
       },
       {
         "name": "RAPAZZZ (VÁRIOS) ",
-        "file": "xaropinhoversoes.opus"
+        "file": "xaropinhoversoes.mp3"
       },
       {
         "name": "UEPA ",
-        "file": "uepa.opus"
+        "file": "uepa.mp3"
       },
       {
         "name": "IIIIIIRRA!!! ",
-        "file": "irra.opus"
+        "file": "irra.mp3"
       },
       {
         "name": "!!! PARE !!! ",
-        "file": "pare.opus"
+        "file": "pare.mp3"
       },
       {
         "name": "RATINHO! ",
-        "file": "ratinho_1.opus"
+        "file": "ratinho_1.mp3"
       },
       {
         "name": "RISADA CHAVES ",
-        "file": "risada_chaves.opus"
+        "file": "risada_chaves.mp3"
       },
       {
         "name": "O CHAPOLIN COLORADO ",
-        "file": "chapolin.opus"
+        "file": "chapolin.mp3"
       },
       {
         "name": "SILVIO SANTOS ",
-        "file": "silvio.opus"
+        "file": "silvio.mp3"
       },
       {
         "name": "O SABOR BRASILEIRO ",
-        "file": "Comercial Dollyinho.opus"
+        "file": "Comercial Dollyinho.mp3"
       },
       {
         "name": "DOLLYNHO ESG ",
-        "file": "dolly_ver_o_2012_converted.opus"
+        "file": "dolly_ver_o_2012_converted.mp3"
       }
     ]
   },
@@ -167,111 +172,111 @@ var SoundData = [
     "sounds": [
       {
         "name": "FELICIDADE ",
-        "file": "felicidade.opus",
+        "file": "felicidade.mp3",
         "classes": "felicidade"
       },
       {
         "name": "CALI A BOQUI ",
-        "file": "caliaboqui.opus",
+        "file": "caliaboqui.mp3",
         "classes": "felicidade"
       },
       {
         "name": "RISADA RODNEI",
-        "file": "risada_rodnei.opus",
+        "file": "risada_rodnei.mp3",
         "classes": "felicidade",
         "release_date": '2022-07-19'
       },
       {
         "name": "BAMBAM ",
-        "file": "hora-do-show-porra.opus"
+        "file": "hora-do-show-porra.mp3"
       },
       {
         "name": "HEE HEE ",
-        "file": "heehee.opus"
+        "file": "heehee.mp3"
       },
       {
         "name": "BOM DIA MOURAO ",
-        "file": "bom-dia-do-mourao.opus"
+        "file": "bom-dia-do-mourao.mp3"
       },
       {
         "name": "DISCO VOADOR ",
-        "file": "jachegouodiscovoador.opus"
+        "file": "jachegouodiscovoador.mp3"
       },
       {
         "name": "RISADA CASALBE ",
-        "file": "risadacasalbe.opus"
+        "file": "risadacasalbe.mp3"
       },
       {
         "name": "ZACARIAS ",
-        "file": "risada-de-zacarias.opus"
+        "file": "risada-de-zacarias.mp3"
       },
       {
         "name": "GUITARRA HUMANA ",
-        "file": "guitarra-humana.opus"
+        "file": "guitarra-humana.mp3"
       },
       {
         "name": "POPOPO ",
-        "file": "galinhas.opus"
+        "file": "galinhas.mp3"
       },
       {
         "name": "TROLOLO ",
-        "file": "trololo.opus"
+        "file": "trololo.mp3"
       },
       {
         "name": "NÃO INTERESSA ",
-        "file": "nao-interessa.opus"
+        "file": "nao-interessa.mp3"
       },
       {
         "name": "BURRO ",
-        "file": "como-voce-e-burro.opus"
+        "file": "como-voce-e-burro.mp3"
       },
       {
         "name": "EOQ ",
-        "file": "eoq.opus"
+        "file": "eoq.mp3"
       },
       {
         "name": "IRINEU ",
-        "file": "irineu.opus"
+        "file": "irineu.mp3"
       },
       {
         "name": "ARQUIVO X ",
-        "file": "arquivo-x.opus"
+        "file": "arquivo-x.mp3"
       },
       {
         "name": "PASSAMO CARALHO ",
-        "file": "celera-jesus-celera-nossa-senhora_2.opus"
+        "file": "celera-jesus-celera-nossa-senhora_2.mp3"
       },
       {
         "name": "CELERA BEM ",
-        "file": "celera-muito-devagar.opus"
+        "file": "celera-muito-devagar.mp3"
       },
       {
         "name": "FIRE!! ",
-        "file": "ta-pegando-fogo-bicho1.opus"
+        "file": "ta-pegando-fogo-bicho1.mp3"
       },
       {
         "name": "RESPIRA CALMA ",
-        "file": "respira_6Uw8mbj.opus"
+        "file": "respira_6Uw8mbj.mp3"
       },
       {
         "name": "AO CLIQUE!!!",
-        "file": "audiogemido-1.opus"
+        "file": "audiogemido-1.mp3"
       },
       {
         "name": "FLAUTINHA ",
-        "file": "naruto-funk-mandando-aquele-versao-triste-1.opus"
+        "file": "naruto-funk-mandando-aquele-versao-triste-1.mp3"
       },
       {
         "name": "AUUUUU ",
-        "file": "late-coracao-cachorro-kassino.opus"
+        "file": "late-coracao-cachorro-kassino.mp3"
       },
       {
         "name": "TITANIC ",
-        "file": "shitty-fluted-titanic.opus"
+        "file": "shitty-fluted-titanic.mp3"
       },
       {
         "name": "NO GOD PLS NO ",
-        "file": "no-god-please-no-noooooooooo.opus"
+        "file": "no-god-please-no-noooooooooo.mp3"
       },
       {
         "name": "DORIME RANDOM ",
@@ -280,71 +285,71 @@ var SoundData = [
       },
       {
         "name": "GLORIA A DEUX ",
-        "file": "daciolo_FO2gzcu.opus"
+        "file": "daciolo_FO2gzcu.mp3"
       },
       {
         "name": "FAIL ",
-        "file": "fail.opus"
+        "file": "fail.mp3"
       },
       {
         "name": "ERROU RUDE ",
-        "file": "errou-rude.opus"
+        "file": "errou-rude.mp3"
       },
       {
         "name": "TRAPEZIO ",
-        "file": "trapezio-descendente_1.opus"
+        "file": "trapezio-descendente_1.mp3"
       },
       {
         "name": "☕ ",
-        "file": "quero-cafe.opus"
+        "file": "quero-cafe.mp3"
       },
       {
         "name": "SAINDO DA JAULA ",
-        "file": "felipe-franco-bambam-ta-saindo-da-jaula-o-monstro-porra.opus"
+        "file": "felipe-franco-bambam-ta-saindo-da-jaula-o-monstro-porra.mp3"
       },
       {
         "name": "ENCARA MESSI ",
-        "file": "gol-messi-vs-getafe-narrat-per-puyal-full-hd-1080p-audiotrimmer.opus"
+        "file": "gol-messi-vs-getafe-narrat-per-puyal-full-hd-1080p-audiotrimmer.mp3"
       },
       {
         "name": "BETO CARRERO ",
-        "file": "beto-carrero.opus"
+        "file": "beto-carrero.mp3"
       },
       {
         "name": "VOCE É O PELÉ? ",
-        "file": "my-movie_1.opus"
+        "file": "my-movie_1.mp3"
       },
       {
         "name": "OI LINDO ",
-        "file": "tmp_q30tfw9.opus"
+        "file": "tmp_q30tfw9.mp3"
       },
       {
         "name": "PSONE ",
-        "file": "ps_1.opus"
+        "file": "ps_1.mp3"
       },
       {
         "name": "BA-DUM-TS ",
-        "file": "ba-dum-ts.opus"
+        "file": "ba-dum-ts.mp3"
       },
       {
         "name": "MEU DEUS BERG ",
-        "file": "mdeus-berg.opus"
+        "file": "mdeus-berg.mp3"
       },
       {
         "name": "BJO DO GORDO ",
-        "file": "beijo-do-gordo.opus"
+        "file": "beijo-do-gordo.mp3"
       },
       {
         "name": "TÉDIO ",
-        "file": "tedio.opus"
+        "file": "tedio.mp3"
       },
       {
         "name": "DILMA FILOSOFA ",
-        "file": "dilma-filosofando-eoq.opus"
+        "file": "dilma-filosofando-eoq.mp3"
       },
       {
         "name": "ESTOQUE DE VENTO ",
-        "file": "dilma-estocando-o-vento-remix-by-timbu.opus"
+        "file": "dilma-estocando-o-vento-remix-by-timbu.mp3"
       },
       {
         "name": "SHAMISEN ",
@@ -353,318 +358,318 @@ var SoundData = [
       },
       {
         "name": "I ❤ POBRE ",
-        "file": "eu_tenho_horror_a_pobre_caco_antibes_sai_de_baixo.opus"
+        "file": "eu_tenho_horror_a_pobre_caco_antibes_sai_de_baixo.mp3"
       },
       {
         "name": "AWAY ",
-        "file": "away-olha-que-escroto.opus"
+        "file": "away-olha-que-escroto.mp3"
       },
       {
         "name": "NÃO CLIQUE - ENSURDECEDOR ",
-        "file": "rojao-estourado.opus"
+        "file": "rojao-estourado.mp3"
       },
       {
         "name": "DANI OH DANI ",
-        "file": "dani.opus"
+        "file": "dani.mp3"
       },
       {
         "name": "WINXP ",
-        "file": "winxp.opus"
+        "file": "winxp.mp3"
       },
       {
         "name": "DEIXA OS GAROTO ",
-        "file": "deixa-os-garoto-brincar.opus"
+        "file": "deixa-os-garoto-brincar.mp3"
       },
       {
         "name": "FRANK PUXA FRANGO ",
-        "file": "puxa-frango.opus"
+        "file": "puxa-frango.mp3"
       },
       {
         "name": "QUE CANETA ",
-        "file": "q-caneta-no-robinho.opus"
+        "file": "q-caneta-no-robinho.mp3"
       },
       {
         "name": "RISADA DO BOLA ",
-        "file": "risada-do-bola.opus"
+        "file": "risada-do-bola.mp3"
       },
       {
         "name": "RISADA DO BOLA ESTOURADO",
-        "file": "risada-do-bola-estourado.opus"
+        "file": "risada-do-bola-estourado.mp3"
       },
       {
         "name": "AIAI",
-        "file": "aiai.opus"
+        "file": "aiai.mp3"
       },
       {
         "name": "JOHN CENA",
-        "file": "john-cena.opus"
+        "file": "john-cena.mp3"
       },
       {
         "name": "JUREG",
-        "file": "jureg-funk.opus"
+        "file": "jureg-funk.mp3"
       },
       {
         "name": "CANETA AZUL",
-        "file": "caneta-azul_.opus"
+        "file": "caneta-azul_.mp3"
       },
       {
         "name": "LUVA ",
-        "file": "luva.opus"
+        "file": "luva.mp3"
       },
       {
         "name": "TROLEI ",
-        "file": "trolei.opus"
+        "file": "trolei.mp3"
       },
       {
         "name": "OBRIGADO AMIGO ",
-        "file": "obrigado amigo.opus"
+        "file": "obrigado amigo.mp3"
       },
       {
         "name": "PARA (AWAY) ",
-        "file": "para - away.opus"
+        "file": "para - away.mp3"
       },
       {
         "name": "PARA (JOÃO KLEBER) ",
-        "file": "para-para-para-aeee.opus"
+        "file": "para-para-para-aeee.mp3"
       },
       {
         "name": "FALA LOBINHO ",
-        "file": "fala-lobinho.opus"
+        "file": "fala-lobinho.mp3"
       },
       {
         "name": "LOBINHO ",
-        "file": "lobinho.opus"
+        "file": "lobinho.mp3"
       },
       {
         "name": "PESADÃO ",
-        "file": "pesadao.opus"
+        "file": "pesadao.mp3"
       },
       {
         "name": "PESADÃO REMIX ",
-        "file": "viradrop-pesadao-remix-ringtune-mp3cut.opus"
+        "file": "viradrop-pesadao-remix-ringtune-mp3cut.mp3"
       },
       {
         "name": "CU DANDO BOTE (AWAY) ",
-        "file": "cu-dando-bote.opus"
+        "file": "cu-dando-bote.mp3"
       },
       {
         "name": "MATADOR DE ONÇA 😼",
-        "file": "matador-de-onca.opus",
+        "file": "matador-de-onca.mp3",
         "texto": "O dia que ver uma onça no meio da mata esturrar, o quete na hora que o barulho mesmo do pipoco come no pé do ouvido, que ela dá um UNHAUUURR-AURRRR, rá! É perigoso, nego treme nas base, se tiver na hora, é perigoso até na calça ele cagar"
       },
       {
         "name": "JOÃO ",
-        "file": "comunista.opus"
+        "file": "comunista.mp3"
       },
       {
         "name": "UM MONTE DE BOSTA ",
-        "file": "um-monte-de-bosta.opus"
+        "file": "um-monte-de-bosta.mp3"
       },
       {
         "name": "EI SEU BUNDA MOLE ",
-        "file": "ei-seu-bunda-mole.opus"
+        "file": "ei-seu-bunda-mole.mp3"
       },
       {
         "name": "ARROMBO-LHE ",
-        "file": "arrombo-lhe-as-pregas.opus"
+        "file": "arrombo-lhe-as-pregas.mp3"
       },
       {
         "name": "SEVERINO ",
-        "file": "severino.opus"
+        "file": "severino.mp3"
       },
       {
         "name": "JA USOU DROGA HOJE ",
-        "file": "ja-usou-droga-hoje.opus"
+        "file": "ja-usou-droga-hoje.mp3"
       },
       {
         "name": "CARAI BORRACHA ",
-        "file": "carai-borracha.opus"
+        "file": "carai-borracha.mp3"
       },
       {
         "name": "MODEM ",
-        "file": "modem-dial-up-sound.opus"
+        "file": "modem-dial-up-sound.mp3"
       },
       {
         "name": "AH ",
-        "file": "yah.opus"
+        "file": "yah.mp3"
       },
       {
         "name": "JOAOGORDO ",
-        "file": "joaogordo.opus"
+        "file": "joaogordo.mp3"
       },
       {
         "name": "R2D2 ",
-        "file": "r2d2_grito.opus"
+        "file": "r2d2_grito.mp3"
       },
       {
         "name": "MISSÃO IMPOSSÍVEL - FLAUTINHA ",
-        "file": "missoa-flauta.opus"
+        "file": "missoa-flauta.mp3"
       },
       {
         "name": "FLASHBACK ",
-        "file": "flashback-harp.opus"
+        "file": "flashback-harp.mp3"
       },
       {
         "name": "VAI TOURINHO!! ",
-        "file": "vai-tourinho.opus"
+        "file": "vai-tourinho.mp3"
       },
       {
         "name": "TEAMS ",
-        "file": "teams.opus"
+        "file": "teams.mp3"
       },
       {
         "name": "TEAMS MSG ",
-        "file": "Microsoft Teams Message Sound Notification.opus"
+        "file": "Microsoft Teams Message Sound Notification.mp3"
       },
       {
         "name": "EU TÔ LOUCO?! ",
-        "file": "zalborghetti-eu-sou-louco.opus"
+        "file": "zalborghetti-eu-sou-louco.mp3"
       },
       {
         "name": "MICHAEL DOUGLAS ",
-        "file": "michael-douglas-ogg-online-audio-converter.opus"
+        "file": "michael-douglas-ogg-online-audio-converter.mp3"
       },
       {
         "name": "QUARTA 4PM ",
-        "file": "quarta_feira.jpeg.opus"
+        "file": "quarta_feira.jpeg.mp3"
       },
       {
         "name": "PRAÇÓDIA ",
-        "file": "a-mesma-praca.opus"
+        "file": "a-mesma-praca.mp3"
       },
       {
         "name": "SANDUICHE-ICHE ",
-        "file": "sanduiche-iche.opus"
+        "file": "sanduiche-iche.mp3"
       },
       {
         "name": "HELICOPTER-HELICOPER ",
-        "file": "helicopter-helicoper.opus"
+        "file": "helicopter-helicoper.mp3"
       },
       {
         "name": "TRAPALHÕES ",
-        "file": "abertura-os-trapalhoes-original.opus"
+        "file": "abertura-os-trapalhoes-original.mp3"
       },
       {
         "name": "REI DO GADO ",
-        "file": "rei_do_gado.opus"
+        "file": "rei_do_gado.mp3"
       },
       {
         "name": "LEI DE GIL ",
-        "file": "lei_de_gil.opus"
+        "file": "lei_de_gil.mp3"
       },
       {
         "name": "VOCÊ É JÃO ",
-        "file": "voce_e_um_jao.opus"
+        "file": "voce_e_um_jao.mp3"
       },
       {
         "name": "ZZZ ",
-        "file": "aughhhhh meme sound.opus"
+        "file": "aughhhhh meme sound.mp3"
       },
       {
         "name": "SABIA Ñ ",
-        "file": "quemerdasabianao.opus"
+        "file": "quemerdasabianao.mp3"
       },
       {
         "name": "SE EU FODO? ",
-        "file": "e-se-eu-fodo.opus"
+        "file": "e-se-eu-fodo.mp3"
       },
       {
         "name": "SÓ ME DA KI ",
-        "file": "some-daki.opus"
+        "file": "some-daki.mp3"
       },
       {
         "name": "SAYAJIN ",
-        "file": "supla.opus"
+        "file": "supla.mp3"
       },
       {
         "name": "WIN10 NOTIF ",
-        "file": "Windows 10 Notification Sound.opus"
+        "file": "Windows 10 Notification Sound.mp3"
       },
       {
         "name": "WIN10 NOTIF x50 ",
-        "file": "windows 10 notification spam.opus"
+        "file": "windows 10 notification spam.mp3"
       },
       {
         "name": "GOOFY ",
-        "file": "Goofy Cartoon Sounds.opus"
+        "file": "Goofy Cartoon Sounds.mp3"
       },
       {
         "name": "AI PAI PARA ",
-        "file": "untitled_3p1UhNj.opus"
+        "file": "untitled_3p1UhNj.mp3"
       },
       {
         "name": "ALARMIDAO",
-        "file": "alarme-gemidao.opus",
+        "file": "alarme-gemidao.mp3",
         "release_date": '2022-07-18'
       },
       {
         "name": "PARABUAINS",
-        "file": "parabueins.opus",
+        "file": "parabueins.mp3",
         "release_date": '2022-07-26'
       },
       {
         "name": "Sensor",
-        "file": "uma-bicha-foi-detectada.opus",
+        "file": "uma-bicha-foi-detectada.mp3",
         "release_date": '2022-07-27'
       },
       {
         "name": "ROMULO FEAT ROUGE",
-        "file": "assererre.opus",
+        "file": "assererre.mp3",
         "release_date": '2022-07-28'
       },
       {
         "name": "Relogio",
-        "file": "relogio.opus",
+        "file": "relogio.mp3",
         "release_date": '2022-07-29'
       },
       {
         "name": "menino ou menina",
-        "file": "menino_ou_menina.opus",
+        "file": "menino_ou_menina.mp3",
         "release_date": '2022-07-29'
       },
       {
         "name": "SENTA QUE VEM",
-        "file": "senta_que_la_vem.opus",
+        "file": "senta_que_la_vem.mp3",
         "release_date": '2022-08-03'
       },
       {
         "name": "AVAST",
-        "file": "ameaca.opus",
+        "file": "ameaca.mp3",
         "release_date": '2022-08-04'
       },
       {
         "name": "MIMIMI 💤",
-        "file": "snore-mimimimimi.opus",
+        "file": "snore-mimimimimi.mp3",
         "release_date": '2022-08-05'
       },
       {
         "name": "🌩️",
-        "file": "lightning-storm-sound-effect.opus",
+        "file": "lightning-storm-sound-effect.mp3",
         "release_date": '2022-08-05'
       },
       {
         "name": "NÃO ENTENDI",
-        "file": "nao_entendi.opus",
+        "file": "nao_entendi.mp3",
         "release_date": '2022-08-08'
       },
       {
         "name": "MOTOROLA",
-        "file": "hello-moto-sound-notification.opus",
+        "file": "hello-moto-sound-notification.mp3",
         "release_date": '2022-08-10'
       },
       {
         "name": "CAFUNGA CAREQUINHA",
-        "file": "cafunga-carequinha.opus",
+        "file": "cafunga-carequinha.mp3",
         "release_date": '2022-09-27'
       },
       {
         "name": "NÃO SOU NÃO",
-        "file": "agnaldo-timoteo-nao-sou-nao_02.opus",
+        "file": "agnaldo-timoteo-nao-sou-nao_02.mp3",
         "release_date": '2022-10-06'
       },
       {
         "name": "SOU APENAS AGNALDO TIMÓTEO",
-        "file": "agnaldo-timoteo-nem-assumido-nem-desassumido.opus",
+        "file": "agnaldo-timoteo-nem-assumido-nem-desassumido.mp3",
         "release_date": '2022-10-06'
       },
     ]
@@ -675,23 +680,23 @@ var SoundData = [
     "sounds": [
       {
         "name": "CAFEZINHO ",
-        "file": "ainn-cafezinho.opus"
+        "file": "ainn-cafezinho.mp3"
       },
       {
         "name": "BATATAO ",
-        "file": "ainn-que-batatao.opus"
+        "file": "ainn-que-batatao.mp3"
       },
       {
         "name": "CIGARRINHO ",
-        "file": "ainn-cigarrinho.opus"
+        "file": "ainn-cigarrinho.mp3"
       },
       {
         "name": "CIGARRINHO 2 ",
-        "file": "ainn-delecea.opus"
+        "file": "ainn-delecea.mp3"
       },
       {
         "name": "COQUINHO ",
-        "file": "adoro-um-coquinho.opus"
+        "file": "adoro-um-coquinho.mp3"
       },
     ]
   },
@@ -701,27 +706,27 @@ var SoundData = [
     "sounds": [
       {
         "name": "TACA-LHE PAU NESTE CARRINHO, MARCOS! ",
-        "file": "taca-le-pau-nesse-carrinho-marcos.opus"
+        "file": "taca-le-pau-nesse-carrinho-marcos.mp3"
       },
       {
         "name": "LÁ VEM O MARCOS! ",
-        "file": "la-vem-o-marcos.opus"
+        "file": "la-vem-o-marcos.mp3"
       },
       {
         "name": "DESCENDO O MORRO DA VÓ SALVELINA! ",
-        "file": "descendo-o-morro-da-vo-salvelina.opus"
+        "file": "descendo-o-morro-da-vo-salvelina.mp3"
       },
       {
         "name": "CEPO DE MADEIRA ",
-        "file": "cepo-de-madeira-original-cutted-2.opus"
+        "file": "cepo-de-madeira-original-cutted-2.mp3"
       },
       {
         "name": "BEM FORTE ",
-        "file": "cepo-de-madeira-bem-duro.opus"
+        "file": "cepo-de-madeira-bem-duro.mp3"
       },
       {
         "name": "LARANXINHA ",
-        "file": "laranjinha.opus"
+        "file": "laranjinha.mp3"
       }
     ]
   },
@@ -731,31 +736,31 @@ var SoundData = [
     "sounds": [
       {
         "name": "CHINELA VAI CANTAR ",
-        "file": "a-chinela-vai-cantar.opus"
+        "file": "a-chinela-vai-cantar.mp3"
       },
       {
         "name": "FUCK U FUCK TU ",
-        "file": "jony_fuck_tu.opus"
+        "file": "jony_fuck_tu.mp3"
       },
       {
         "name": "MC DONALDS ",
-        "file": "jony_mc_donalds.opus"
+        "file": "jony_mc_donalds.mp3"
       },
       {
         "name": "SEIS SÃO UNS PORCO ",
-        "file": "jony_seis_sao_uns_porco.opus"
+        "file": "jony_seis_sao_uns_porco.mp3"
       },
       {
         "name": "NÓIS É RUIM ",
-        "file": "nois_eh_ruim.opus"
+        "file": "nois_eh_ruim.mp3"
       },
       {
         "name": "NÃO CLIQUE ",
-        "file": "nao_clicar.opus"
+        "file": "nao_clicar.mp3"
       },
       {
         "name": "DEDUROU MCDONALDS ",
-        "file": "dedurou_mcdonalds.opus"
+        "file": "dedurou_mcdonalds.mp3"
       }
     ]
   },
@@ -765,31 +770,31 @@ var SoundData = [
     "sounds": [
       {
         "name": "TOME ",
-        "file": "tome.opus"
+        "file": "tome.mp3"
       },
       {
         "name": "UI ",
-        "file": "ui.opus"
+        "file": "ui.mp3"
       },
       {
         "name": "HAHAHA ",
-        "file": "atumalaca.opus"
+        "file": "atumalaca.mp3"
       },
       {
         "name": "DANÇA ",
-        "file": "dança.opus"
+        "file": "dança.mp3"
       },
       {
         "name": "CAVALO ",
-        "file": "cavalo.opus"
+        "file": "cavalo.mp3"
       },
       {
         "name": "VAI DAR NAMORO ",
-        "file": "vai_dar_namoro.opus"
+        "file": "vai_dar_namoro.mp3"
       },
       {
         "name": "ELE GOSTA ",
-        "file": "ele_gosta.opus"
+        "file": "ele_gosta.mp3"
       }
     ]
   },
@@ -799,19 +804,19 @@ var SoundData = [
     "sounds": [
       {
         "name": "CALABOCA ",
-        "file": "pesadelinho_calaboca.opus"
+        "file": "pesadelinho_calaboca.mp3"
       },
       {
         "name": "BATATA PODRA ",
-        "file": "batata_podra.opus"
+        "file": "batata_podra.mp3"
       },
       {
         "name": "BATATA BATATA ",
-        "file": "batata_batata.opus"
+        "file": "batata_batata.mp3"
       },
       {
         "name": "VERGONHA PRRROFICIÓN ",
-        "file": "jacquin-vergonha-prrroficion.opus"
+        "file": "jacquin-vergonha-prrroficion.mp3"
       }
     ]
   },
@@ -822,35 +827,35 @@ var SoundData = [
     "sounds": [
       {
         "name": "TA OK? ",
-        "file": "bolsok.opus"
+        "file": "bolsok.mp3"
       },
       {
         "name": "BOLSONARO PUTO ",
-        "file": "bolsonaro-puto.opus"
+        "file": "bolsonaro-puto.mp3"
       },
       {
         "name": "COVARDE ",
-        "file": "mito-16-covarde-comunista.opus"
+        "file": "mito-16-covarde-comunista.mp3"
       },
       {
         "name": "ROSQUINHA ",
-        "file": "bolsonaro-vai-queimar-sua-rosquinha-onde-tu-bem-entender-porra-greellow-br.opus"
+        "file": "bolsonaro-vai-queimar-sua-rosquinha-onde-tu-bem-entender-porra-greellow-br.mp3"
       },
       {
         "name": "PSOL ",
-        "file": "psol.opus"
+        "file": "psol.mp3"
       },
       {
         "name": "TEM QUE SE FUDER ",
-        "file": "temquesefoder.opus"
+        "file": "temquesefoder.mp3"
       },
       {
         "name": "INFERNIZA MINHA VIDA ",
-        "file": "infernizaaminhavida.opus"
+        "file": "infernizaaminhavida.mp3"
       },
       {
         "name": "CALDO DE CANA ",
-        "file": "bolsonaro-desgraca.opus"
+        "file": "bolsonaro-desgraca.mp3"
       }
     ]
   },
@@ -860,31 +865,31 @@ var SoundData = [
     "sounds": [
       {
         "name": "GRANDE REALIDADE ",
-        "file": "datena-essa-e-a-grande-realidade-high.opus"
+        "file": "datena-essa-e-a-grande-realidade-high.mp3"
       },
       {
         "name": "B4B4C4 ",
-        "file": "datena-babaca.opus"
+        "file": "datena-babaca.mp3"
       },
       {
         "name": "SAFADEZA ",
-        "file": "datena-safadeza.opus"
+        "file": "datena-safadeza.mp3"
       },
       {
         "name": "CADE A IBAGEN ",
-        "file": "datena-cade-ibagen.opus"
+        "file": "datena-cade-ibagen.mp3"
       },
       {
         "name": "SE FERROU! ",
-        "file": "datena-se-ferrou.opus"
+        "file": "datena-se-ferrou.mp3"
       },
       {
         "name": "É BRINCADEIRA ",
-        "file": "vcs-estao-de-brincadeira.opus"
+        "file": "vcs-estao-de-brincadeira.mp3"
       },
       {
         "name": "QUE MERDA É ESSA??? ",
-        "file": "que-merda-e-essa-caralho.opus"
+        "file": "que-merda-e-essa-caralho.mp3"
       }
     ]
   },
@@ -894,11 +899,11 @@ var SoundData = [
     "sounds": [
       {
         "name": "SACANAGEM!",
-        "file": "sacanagem.opus"
+        "file": "sacanagem.mp3"
       },
       {
         "name": "QUE MARAVILHA",
-        "file": "maravilha_UruhsNc.opus",
+        "file": "maravilha_UruhsNc.mp3",
         "release_date": '2022-07-14'
       },
     ]
@@ -910,42 +915,42 @@ var SoundData = [
     "sounds": [
       {
         "name": "ACHOU ERRADO",
-        "file": "song-achou-errado-otario.opus",
+        "file": "song-achou-errado-otario.mp3",
         "release_date": '2022-07-14'
       },
       {
         "name": "NÃO É UM TRANSFORMERS",
-        "file": "nao-e-um-transformers.opus",
+        "file": "nao-e-um-transformers.mp3",
         "release_date": '2022-07-14'
       },
       {
         "name": "maconha",
-        "file": "isso_eh_maconha.opus",
+        "file": "isso_eh_maconha.mp3",
         "release_date": '2022-07-14'
       },
       {
         "name": "É DROGA",
-        "file": "eh_droga.opus",
+        "file": "eh_droga.mp3",
         "release_date": '2022-07-14'
       },
       {
         "name": "NINGUÉM TRANSA",
-        "file": "choque_67Cv4l3.opus",
+        "file": "choque_67Cv4l3.mp3",
         "release_date": '2022-07-14'
       },
       {
         "name": "GÓTICO",
-        "file": "julinho-da-van-gotico.opus",
+        "file": "julinho-da-van-gotico.mp3",
         "release_date": '2022-07-14'
       },
       {
         "name": "PARADOXO",
-        "file": "choque-de-cultura-renan-e-paradoxo-que-chama-isso-ai.opus",
+        "file": "choque-de-cultura-renan-e-paradoxo-que-chama-isso-ai.mp3",
         "release_date": '2022-07-14'
       },
       {
         "name": "AMBIENTE DE MÚSICA",
-        "file": "ambiente-de-musica.opus",
+        "file": "ambiente-de-musica.mp3",
         "release_date": '2022-07-18'
       },
     ]
@@ -957,17 +962,17 @@ var SoundData = [
     "sounds": [
       {
         "name": "ME CONVENCE",
-        "file": "me-convence.opus",
+        "file": "me-convence.mp3",
         "release_date": "2022-08-18"
       },
       {
         "name": "[SP] COR / [RJ] FLA",
-        "file": "rio-fla-sp-cor.opus",
+        "file": "rio-fla-sp-cor.mp3",
         "release_date": '2022-08-18'
       },
       {
         "name": "RONALDO",
-        "file": "ronaldo-by-charles.opus",
+        "file": "ronaldo-by-charles.mp3",
         "release_date": '2022-08-18'
       },
     ]
@@ -978,83 +983,83 @@ var SoundData = [
     "sounds": [
       {
         "name": "POMBO ",
-        "file": "pombo.opus"
+        "file": "pombo.mp3"
       },
       {
         "name": "BEMTEVI ",
-        "file": "bemtevi.opus"
+        "file": "bemtevi.mp3"
       },
       {
         "name": "CANÁRIO DO MATO ",
-        "file": "canario_do_mato.opus"
+        "file": "canario_do_mato.mp3"
       },
       {
         "name": "TICO TICO ",
-        "file": "tico_tico.opus"
+        "file": "tico_tico.mp3"
       },
       {
         "name": "PAPA CAPIM ",
-        "file": "papa_capim.opus"
+        "file": "papa_capim.mp3"
       },
       {
         "name": "AZULÃO ",
-        "file": "azulao.opus"
+        "file": "azulao.mp3"
       },
       {
         "name": "BICO-PIMENTA ",
-        "file": "bico_pimenta.opus"
+        "file": "bico_pimenta.mp3"
       },
       {
         "name": "CARDEAL ",
-        "file": "cardeal.opus"
+        "file": "cardeal.mp3"
       },
       {
         "name": "CORRUPIÃO ",
-        "file": "corrupiao.opus"
+        "file": "corrupiao.mp3"
       },
       {
         "name": "GOLINHA ",
-        "file": "golinha.opus"
+        "file": "golinha.mp3"
       },
       {
         "name": "SABIÁ DO CAMPO ",
-        "file": "sabia_do_campo.opus"
+        "file": "sabia_do_campo.mp3"
       },
       {
         "name": "GALO DE CAMPINA ",
-        "file": "galo_de_campina.opus"
+        "file": "galo_de_campina.mp3"
       },
       {
         "name": "CORUIRA ",
-        "file": "coruira.opus"
+        "file": "coruira.mp3"
       },
       {
         "name": "TRINCA-FERRO ",
-        "file": "trinca_ferro.opus"
+        "file": "trinca_ferro.mp3"
       },
       {
         "name": "CABOCLINHA ",
-        "file": "caboclinha.opus"
+        "file": "caboclinha.mp3"
       },
       {
         "name": "TICO TICO REI ",
-        "file": "tico_tico_rei.opus"
+        "file": "tico_tico_rei.mp3"
       },
       {
         "name": "BIGODINHO ",
-        "file": "bigodinho.opus"
+        "file": "bigodinho.mp3"
       },
       {
         "name": "ANÚ-BRANCO ",
-        "file": "anu_branco.opus"
+        "file": "anu_branco.mp3"
       },
       {
         "name": "COLEIRO TUI-TUI ",
-        "file": "coleiro_tui_tui.opus"
+        "file": "coleiro_tui_tui.mp3"
       },
       {
         "name": "TESOURA DO BREJO ",
-        "file": "tesoura_do_brejo.opus"
+        "file": "tesoura_do_brejo.mp3"
       }
     ]
   },
@@ -1064,43 +1069,43 @@ var SoundData = [
     "sounds": [
       {
         "name": "UNDER ATTACK ",
-        "file": "aoe2sound.opus"
+        "file": "aoe2sound.mp3"
       },
       {
         "name": "7 AHHH :D ",
-        "file": "aoe2-7-ahh.opus"
+        "file": "aoe2-7-ahh.mp3"
       },
       {
         "name": "JA ME SINTO MAIS FORTE ",
-        "file": "ja-me-sinto-mais-forte.opus"
+        "file": "ja-me-sinto-mais-forte.mp3"
       },
       {
         "name": "ESTOU FERIDO ",
-        "file": "estou-ferido-nao-me-posso-mexer.opus"
+        "file": "estou-ferido-nao-me-posso-mexer.mp3"
       },
       {
         "name": "9 UHHH",
-        "file": "aoe2-9-ooh.opus"
+        "file": "aoe2-9-ooh.mp3"
       },
       {
         "name": "11 HAHA ",
-        "file": "aoe2-11-herb-laugh.opus"
+        "file": "aoe2-11-herb-laugh.mp3"
       },
       {
         "name": "30 WOLOLO ",
-        "file": "aoe2-30-wololo.opus"
+        "file": "aoe2-30-wololo.mp3"
       },
       {
         "name": "SHHH - HO ",
-        "file": "shhh-ho.opus"
+        "file": "shhh-ho.mp3"
       },
       {
         "name": "PROOOH ",
-        "file": "prrroh.opus"
+        "file": "prrroh.mp3"
       },
       {
         "name": "VILLAGER KILLED ",
-        "file": "villager-killed.opus"
+        "file": "villager-killed.mp3"
       }
     ]
   },
@@ -1110,55 +1115,55 @@ var SoundData = [
     "sounds": [
       {
         "name": "gun 1 ",
-        "file": "gen1.opus"
+        "file": "gen1.mp3"
       },
       {
         "name": "gun 2 ",
-        "file": "gen2.opus"
+        "file": "gen2.mp3"
       },
       {
         "name": "gun 3 ",
-        "file": "gen3.opus"
+        "file": "gen3.mp3"
       },
       {
         "name": "gun 4 ",
-        "file": "gen4.opus"
+        "file": "gen4.mp3"
       },
       {
         "name": "gun 5 ",
-        "file": "gen5.opus"
+        "file": "gen5.mp3"
       },
       {
         "name": "gun 6 ",
-        "file": "gen6.opus"
+        "file": "gen6.mp3"
       },
       {
         "name": "gun 7 ",
-        "file": "gen7.opus"
+        "file": "gen7.mp3"
       },
       {
         "name": "AK-47 ",
-        "file": "ak47.opus"
+        "file": "ak47.mp3"
       },
       {
         "name": "METRALHADORA ",
-        "file": "metralhadora.opus"
+        "file": "metralhadora.mp3"
       },
       {
         "name": "SQUIDGAME ",
-        "file": "squid.opus"
+        "file": "squid.mp3"
       },
       {
         "name": "AWP ",
-        "file": "awp.opus"
+        "file": "awp.mp3"
       },
       {
         "name": "FIRE IN THE HOLE ",
-        "file": "counter-strike-jingle-cs-radio-fire-in-the-hole.opus"
+        "file": "counter-strike-jingle-cs-radio-fire-in-the-hole.mp3"
       },
       {
         "name": "FLASHBANG ",
-        "file": "flashbang-sound-effect.opus"
+        "file": "flashbang-sound-effect.mp3"
       }
     ]
   },
@@ -1168,51 +1173,51 @@ var SoundData = [
     "sounds": [
       {
         "name": "LA PALOMA",
-        "file": "la-paloma.opus"
+        "file": "la-paloma.mp3"
       },
       {
         "name": "CAMBOYA",
-        "file": "bandicam-2016-03-23-12-05-52-022-online-audio-converter.opus"
+        "file": "bandicam-2016-03-23-12-05-52-022-online-audio-converter.mp3"
       },
       {
         "name": "LINGUA DAS COBRAS",
-        "file": "la_le_ciarce.opus"
+        "file": "la_le_ciarce.mp3"
       },
       {
         "name": "LA QUIOKI",
-        "file": "la_quioki.opus"
+        "file": "la_quioki.mp3"
       },
       {
         "name": "LA PUESO",
-        "file": "la_pueso.opus"
+        "file": "la_pueso.mp3"
       },
       {
         "name": "LA FUESTE",
-        "file": "la_fuerce.opus"
+        "file": "la_fuerce.mp3"
       },
       {
         "name": "LA FIESTA",
-        "file": "la_fiesta.opus"
+        "file": "la_fiesta.mp3"
       },
       {
         "name": "LA MONI",
-        "file": "la_moni.opus"
+        "file": "la_moni.mp3"
       },
       {
         "name": "SANDYUITI",
-        "file": "sandiuiche.opus"
+        "file": "sandiuiche.mp3"
       },
       {
         "name": "JAPONESADA",
-        "file": "linguaniponica.opus"
+        "file": "linguaniponica.mp3"
       },
       {
         "name": "NASCI SABENDO",
-        "file": "sabendoler.opus"
+        "file": "sabendoler.mp3"
       },
       {
         "name": "SHALOM",
-        "file": "shalom.opus"
+        "file": "shalom.mp3"
       }
     ]
   },
@@ -1223,22 +1228,22 @@ var SoundData = [
     "sounds": [
       {
         "name": "NEGO BAM",
-        "file": "negobam.opus",
+        "file": "negobam.mp3",
         "release_date": "2022-07-21"
       },
       {
         "name": "ARQUIVO BAM",
-        "file": "x-files-nego-bam-1.opus",
+        "file": "x-files-nego-bam-1.mp3",
         "release_date": "2022-07-21"
       },
       {
         "name": "SAFADA",
-        "file": "ai-safada.opus",
+        "file": "ai-safada.mp3",
         "release_date": "2022-07-21"
       },
       {
         "name": "AAAAA",
-        "file": "AAAAA.opus",
+        "file": "AAAAA.mp3",
         "release_date": "2022-07-21"
       },
     ]
@@ -1250,17 +1255,17 @@ var SoundData = [
     "sounds": [
       {
         "name": "VOCÊ É MEMADA?",
-        "file": "voce_eh_memada.opus",
+        "file": "voce_eh_memada.mp3",
         "release_date": "2022-09-13"
       },
       {
         "name": "SIM",
-        "file": "voce_eh_memada_sim.opus",
+        "file": "voce_eh_memada_sim.mp3",
         "release_date": "2022-09-13"
       },
       {
         "name": "HMM ME APAIXONEI",
-        "file": "voce_eh_memada_humm_me_apaixonei.opus",
+        "file": "voce_eh_memada_humm_me_apaixonei.mp3",
         "release_date": "2022-09-13"
       },
     ]
@@ -1272,32 +1277,32 @@ var SoundData = [
     "sounds": [
       {
         "name": "PARABUAINS",
-        "file": "parabueins.opus",
+        "file": "parabueins.mp3",
         "release_date": '2022-07-26'
       },
       {
         "name": "MASQUEICO",
-        "file": "masqueico.opus",
+        "file": "masqueico.mp3",
         "release_date": "2022-08-23"
       },
       {
         "name": "MATEIRE",
-        "file": "vai-me-mateire.opus",
+        "file": "vai-me-mateire.mp3",
         "release_date": "2022-08-23"
       },
       {
         "name": "VUAIDA",
-        "file": "ai-meu-deus-ai-minha-vuaida.opus",
+        "file": "ai-meu-deus-ai-minha-vuaida.mp3",
         "release_date": "2022-08-23"
       },
       {
         "name": "ESTILO",
-        "file": "tudo-pelo-estilo.opus",
+        "file": "tudo-pelo-estilo.mp3",
         "release_date": "2022-08-23"
       },
       {
         "name": "IAISSU",
-        "file": "nao-faca-iaissu.opus",
+        "file": "nao-faca-iaissu.mp3",
         "release_date": "2022-08-23"
       },
     ]
@@ -1309,7 +1314,7 @@ var SoundData = [
     "sounds": [
       {
         "name": "ESSA BOLETA",
-        "file": "essa_boleta.opus",
+        "file": "essa_boleta.mp3",
         "release_date": '2022-08-05'
       },
       {
@@ -1332,7 +1337,7 @@ var SoundData = [
       },
 	    {
         "name": "IRMAOSSSSÃOOO",
-        "file": "IRMAOZAO.opus",
+        "file": "IRMAOZAO.mp3",
         "release_date": '2022-09-01'
       },
     ]
