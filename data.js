@@ -117,6 +117,11 @@ var SoundData = [
         "release_date": '2022-10-19'
       },
       {
+        "name": "CALE-SE ",
+        "file": "kiko_cale_se.mp3",
+        "release_date": '2022-10-21'
+      },
+      {
         "name": "PARABENS PAPAI ",
         "file": "parabens-papai.mp3"
       },
