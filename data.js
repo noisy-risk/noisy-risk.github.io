@@ -665,7 +665,8 @@ var SoundData = [
       {
         "name": "NÃO SOU NÃO",
         "file": "agnaldo-timoteo-nao-sou-nao_02.mp3",
-        "release_date": '2022-10-06'
+        "release_date": '2022-10-06',
+        "texto": "- Não sou, não!\n- Ah não?\n- Não sou, não, não sou não!\n- Eu sou... Eu sou um homem total e absolutamente liberado\n- Desculpa então...\n- Completamente equivocado!\n- Ah.. pensei que o senhor era assumido! Desculpa então...\n- Nem assumido, nem desassumido, eu sou apenas Agnaldo Timóteo!"
       },
       {
         "name": "SOU APENAS AGNALDO TIMÓTEO",
