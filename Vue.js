@@ -341,7 +341,7 @@ var vm = new Vue({
         })
         .then(function(blob) {
 
-          var file = new File([blob], sound.file, {type: 'audio/mp3'});
+          var file = new File([blob], sound.file, {type: 'audio/' + sound.file.split('.').slice(-1)});
           var filesArray = [file];
 
           if(navigator.canShare && navigator.canShare({ files: filesArray })) {
