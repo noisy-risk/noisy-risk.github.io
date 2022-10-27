@@ -19,6 +19,7 @@ var vm = new Vue({
       transition: 'slide-y-reverse-transition',
     }),
     tts: "",
+    text: "",
     ttsPitch: 1,
     ttsRate: 1,
     pesquisa: "",
