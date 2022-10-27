@@ -392,7 +392,7 @@ var vm = new Vue({
 
       var binary = convertDataURIToBinary(bufferToBase64(audio))
 
-      var file = new File([binary], sound.file, {type: 'audio/mp3'});
+      var file = new File([binary], sound.file, {type: 'audio/' + sound.file.split('.').slice(-1)});
       var filesArray = [file];
 
       if (navigator.canShare && navigator.canShare({ files: filesArray })) {

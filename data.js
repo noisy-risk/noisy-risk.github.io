@@ -197,7 +197,7 @@ var SoundData = [
       },
       {
         "name": "HEE HEE ",
-        "file": "heehee.mp3"
+        "file": "heehee.wav"
       },
       {
         "name": "BOM DIA MOURAO ",
