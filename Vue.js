@@ -198,7 +198,7 @@ var vm = new Vue({
       console.log(buttons)
 
       for (i = 0; i < buttons.length; i++) {
-        txtValue = buttons[i].innerText;
+        txtValue = buttons[i].id.split("__")[0];
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
           buttons[i].style.display = "";
         } else {
