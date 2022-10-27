@@ -335,23 +335,30 @@ var vm = new Vue({
 
     },
     share: async (sound) => {
-      const path = sound.file;
-      if (sound.texto)
-        vm.showSnackBar(sound.texto);
-      var audio = new Audio("./audios/" + path);
-      audio.playbackRate = vm.ttsRate;
-      audio.preservesPitch = false;
+      fetch("./audios/" + sound.file)
+        .then(function(response) {
+          if (sound.texto)
+            vm.showSnackBar(sound.texto);
+          var audio = new Audio(response);
+          audio.playbackRate = vm.ttsRate;
+          audio.preservesPitch = false;
 
-      var file = new File([audio], sound.file, {type: 'audio/mp3'});
-      var filesArray = [file];
+          return new Blob([audio], sound.file, {type: 'audio/mp3'});
+        })
+        .then(function(blob) {
 
-      if(navigator.canShare && navigator.canShare({ files: filesArray })) {
-        navigator.share({
-          text: sound.name,
-          files: filesArray,
-          title: sound.name
-        });
-      }
+          var file = new File([blob], sound.file, {type: 'audio/mp3'});
+          var filesArray = [file];
+
+          if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+            navigator.share({
+              text: sound.name,
+              files: filesArray,
+              title: sound.name,
+              url: 'https://noisy-risk.github.io/'
+            });
+          }
+        })
     }
   }
 })
