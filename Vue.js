@@ -335,13 +335,41 @@ var vm = new Vue({
 
     },
     share: async (sound) => {
+
+
+      var bufferToBase64 = function (buffer) {
+        var bytes = new Uint8Array(buffer);
+        var len = buffer.byteLength;
+        var binary = "";
+        for (var i = 0; i < len; i++) {
+            binary += String.fromCharCode(bytes[i]);
+        }
+        return window.btoa(binary);
+      };
+
+      var BASE64_MARKER = ';base64,';
+
+      function convertDataURIToBinary(dataURI) {
+        var base64Index = dataURI.indexOf(BASE64_MARKER) + BASE64_MARKER.length;
+        var base64 = dataURI.substring(base64Index);
+        var raw = window.atob(base64);
+        var rawLength = raw.length;
+        var array = new Uint8Array(new ArrayBuffer(rawLength));
+        
+        for(let i = 0; i < rawLength; i++) {
+          array[i] = raw.charCodeAt(i);
+        }
+        return array;
+      }
+
+
       if (sound.texto)
         vm.showSnackBar(sound.texto);
       var audio = new Audio("https://noisy-risk.github.io/audios/" + sound.file);
       audio.playbackRate = vm.ttsRate;
       audio.preservesPitch = false;
 
-      var binary = convertDataURIToBinary(audio)
+      var binary = convertDataURIToBinary(bufferToBase64(audio))
 
       var file = new File([binary], sound.file, {type: 'audio/mp3'});
       var filesArray = [file];
