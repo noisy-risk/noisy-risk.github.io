@@ -1170,7 +1170,42 @@ var SoundData = [
       {
         "name": "FLASHBANG ",
         "file": "flashbang-sound-effect.mp3"
-      }
+      },
+      {
+        "name": "K-ULTRA KILL",
+        "file": "kill-ultra-kill.mp3",
+        "release_date": '2022-10-27'
+      },
+      {
+        "name": "K-KILLING SPREE",
+        "file": "kill-killing-spree.mp3",
+        "release_date": '2022-10-27'
+      },
+      {
+        "name": "K-MULTI KILL",
+        "file": "kill-multi-kill.mp3",
+        "release_date": '2022-10-27'
+      },
+      {
+        "name": "K-TRIPLE KILL",
+        "file": "kill-triple-kill.mp3",
+        "release_date": '2022-10-27'
+      },
+      {
+        "name": "K-UNSTOPPABLE",
+        "file": "kill-unstoppable.mp3",
+        "release_date": '2022-10-27'
+      },
+      {
+        "name": "K-DOUBLE KILL",
+        "file": "kill-double-kill.mp3",
+        "release_date": '2022-10-27'
+      },
+      {
+        "name": "K-DOMINATING",
+        "file": "kill-dominating.mp3",
+        "release_date": '2022-10-27'
+      },
     ]
   },
   {
