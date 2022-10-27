@@ -335,30 +335,43 @@ var vm = new Vue({
 
     },
     share: async (sound) => {
-      fetch("./audios/" + sound.file)
-        .then(function(response) {
-          if (sound.texto)
-            vm.showSnackBar(sound.texto);
-          var audio = new Audio(response);
-          audio.playbackRate = vm.ttsRate;
-          audio.preservesPitch = false;
+      if (sound.texto)
+        vm.showSnackBar(sound.texto);
+      var audio = new Audio("https://noisy-risk.github.io/audios/" + sound.file);
+      audio.playbackRate = vm.ttsRate;
+      audio.preservesPitch = false;
 
-          return new Blob([audio], sound.file, {type: 'audio/mp3'});
-        })
-        .then(function(blob) {
+      var binary = convertDataURIToBinary(audio)
 
-          var file = new File([blob], sound.file, {type: 'audio/mp3'});
-          var filesArray = [file];
+      var file = new File([binary], sound.file, {type: 'audio/mp3'});
+      var filesArray = [file];
 
-          if(navigator.canShare && navigator.canShare({ files: filesArray })) {
-            navigator.share({
-              text: sound.name,
-              files: filesArray,
-              title: sound.name,
-              url: 'https://noisy-risk.github.io/'
-            });
-          }
-        })
+      if (navigator.canShare && navigator.canShare({ files: filesArray })) {
+        navigator.share({
+          text: sound.name,
+          files: filesArray,
+          title: sound.name,
+          url: 'https://noisy-risk.github.io/'
+        });
+      }
+      // fetch("./audios/" + sound.file)
+      //   .then(function(response) {
+      //     return response.blob()
+      //   })
+      //   .then(function(blob) {
+
+      //     var file = new File([blob], sound.file, {type: 'audio/mp3'});
+      //     var filesArray = [file];
+
+      //     if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+      //       navigator.share({
+      //         text: sound.name,
+      //         files: filesArray,
+      //         title: sound.name,
+      //         url: 'https://noisy-risk.github.io/'
+      //       });
+      //     }
+      //   })
     }
   }
 })
