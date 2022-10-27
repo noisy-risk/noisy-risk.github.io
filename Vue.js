@@ -335,41 +335,23 @@ var vm = new Vue({
 
     },
     share: async (sound) => {
-      // const parts = [
-      //   new Blob(['Parting file'], {
-      //     type: 'text/plain'
-      //   }),
-      //   '',
-      //   new Uint16Array([33])
-      // ]
-      // console.log(`${parts}`)
-      // const file = new File(parts, "./audios/" + sound.file, {
-      //   lastModified: new Date(),
-      //   type: "audio/mpeg"
-      // });
-      // await navigator.share({
-      //   title: sound.name,
-      //   text: sound.name,
-      //   files: [file]
-      // })
-      fetch("./audios/" + sound.file)
-        .then(function(response) {
-          return response.blob()
-        })
-        .then(function(blob) {
+      const path = sound.file;
+      if (sound.texto)
+        vm.showSnackBar(sound.texto);
+      var audio = new Audio("./audios/" + path);
+      audio.playbackRate = vm.ttsRate;
+      audio.preservesPitch = false;
 
-          var file = new File([blob], sound.file, {type: 'audio/mp3'});
-          var filesArray = [file];
+      var file = new File([audio], sound.file, {type: 'audio/mp3'});
+      var filesArray = [file];
 
-          if(navigator.canShare && navigator.canShare({ files: filesArray })) {
-            navigator.share({
-              text: sound.name,
-              files: filesArray,
-              title: sound.name,
-              url: 'https://noisy-risk.github.io/'
-            });
-          }
-        })
+      if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+        navigator.share({
+          text: sound.name,
+          files: filesArray,
+          title: sound.name
+        });
+      }
     }
   }
 })
