@@ -55,9 +55,9 @@
                           {{ item.name }}
                         </v-btn>
                         <v-btn v-bind:id="item.name + `__share`" v-bind:class="
-                        [item.classes != null ? item.classes : `normal`, `share-btn`]"
+                        [item.classes != null ? item.classes : `accent`, `share-btn`]"
                           class="mb-1 mr-1 searchable" 
-                        x-small v-bind:data="item" @click="share(item)">🔗</v-btn>
+                        x-small v-bind:data="item" @click="share(item)">➦</v-btn>
                     </div>
                     </v-row>
                   </v-expansion-panel-content>

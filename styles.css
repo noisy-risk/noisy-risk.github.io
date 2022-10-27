@@ -62,3 +62,15 @@
 .ar {
   width: 100% !important;
 }
+
+.share-btn {
+  margin-left: -20px !important;
+  margin-top: 10px !important;
+  padding: 0px !important;
+  padding-bottom: 2px !important;
+  height: 18px !important;
+  min-width: 10px !important;
+  width: 20px !important;
+  font-family: Helvetica;
+  font-size: 1rem !important;
+}
