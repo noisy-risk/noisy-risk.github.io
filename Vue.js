@@ -335,7 +335,28 @@ var vm = new Vue({
 
     },
     share: async (sound) => {
+      fetch("./audios/" + sound.file)
+        .then(function(response) {
+          return response.blob()
+        })
+        .then(function(blob) {
 
+          var file = new File([blob], sound.file, {type: 'audio/mp3'});
+          var filesArray = [file];
+
+          if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+            navigator.share({
+              text: sound.name,
+              files: filesArray,
+              title: sound.name,
+              url: 'https://noisy-risk.github.io/'
+            });
+          }
+        })
+    },
+    
+    share_pitchrate: async (sound) => {
+      // THIS CURRENTLY DOES NOT WORK
 
       var bufferToBase64 = function (buffer) {
         var bytes = new Uint8Array(buffer);
@@ -382,24 +403,6 @@ var vm = new Vue({
           url: 'https://noisy-risk.github.io/'
         });
       }
-      // fetch("./audios/" + sound.file)
-      //   .then(function(response) {
-      //     return response.blob()
-      //   })
-      //   .then(function(blob) {
-
-      //     var file = new File([blob], sound.file, {type: 'audio/mp3'});
-      //     var filesArray = [file];
-
-      //     if(navigator.canShare && navigator.canShare({ files: filesArray })) {
-      //       navigator.share({
-      //         text: sound.name,
-      //         files: filesArray,
-      //         title: sound.name,
-      //         url: 'https://noisy-risk.github.io/'
-      //       });
-      //     }
-      //   })
     }
   }
 })
