@@ -39,14 +39,18 @@ var vm = new Vue({
     callback(msg) {
       console.debug('Event: ', msg)
     },
-    play: (sound, log = true) => {
+    play: (sound, log = true, pitch = null, rate = null) => {
       const path = sound.file;
       if (sound.texto)
         vm.showSnackBar(sound.texto);
       var audio = new Audio("./audios/" + path);
       var xhr = new XMLHttpRequest();
       vm.audios.push(audio);
-      audio.playbackRate = vm.ttsRate;
+      if (rate == null) { 
+        audio.playbackRate = vm.ttsRate;
+      } else {
+        audio.playbackRate = rate;
+      }
       audio.preservesPitch = false;
       audio.play();
       if (log) {
@@ -56,9 +60,9 @@ var vm = new Vue({
         xhr.send(JSON.stringify({ value: sound.name }));
       }
     },
-    execute: (sound, log = true) => {
+    execute: (sound, log = true, pitch = null, rate = null) => {
       if (sound.file != null) {
-        vm.play(sound, log);
+        vm.play(sound, log, pitch, rate);
       } else {
         sound.func();
       }
@@ -133,11 +137,12 @@ var vm = new Vue({
         const whichOne = vm.randBetween(0, allSounds.length - 1);
         const when = new Date(new Date().getTime() + sleepTime);
         const whenstr = when.getHours().toString().padStart(2, '0') + ":" + when.getMinutes().toString().padStart(2, '0') + ":" + when.getSeconds().toString().padStart(2, '0')
-        console.log(`Will play at ${whenstr}: ${allSounds[whichOne].name} (in ${(sleepTime / 60000).toFixed(2)}min)`)
+        const rndRate = vm.randBetween(50, 200) / 100.0;
+        console.log(`Will play at ${whenstr} (${rndRate}x speed): ${allSounds[whichOne].name} (in ${(sleepTime / 60000).toFixed(2)}min)`)
         setTimeout((when) => {
           if (vm.last_cancel < when) {
             console.log(`Tocando agora ${allSounds[whichOne].name}`)
-            vm.execute(allSounds[whichOne], log = false);
+            vm.execute(allSounds[whichOne], log = false, rate = rndRate);
           }
         }, sleepTime, firstWhen);
       }
