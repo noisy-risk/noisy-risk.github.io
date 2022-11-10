@@ -321,6 +321,27 @@ var vm = new Vue({
       }
 
     },
+    vuvuzelaaa: () => {
+      const firstWhen = new Date().getTime();
+      sound = {
+        "name": "Vuvuzela",
+        "file": "vuvuzela.mp3"
+      }
+      var srate = 0.5;
+      vm.showSnackBar(`HEXA PORRAAAAA`);
+      var sleepTime = 0;
+      while (srate < 3) {
+        srate = srate + 0.5
+        const sleepInterval = 2000;
+        sleepTime += sleepInterval;
+        setTimeout((when) => {
+          if (vm.last_cancel < when) {
+            console.log(`Tocando agora ${sound.name}`)
+            vm.execute(sound, log = false, rate = srate);
+          }
+        }, sleepTime, firstWhen);
+      }
+    },
     customCoxinhaRandom: () => {
       var custom = vm.customtxt;
       const sounds = [custom, "cadê", "cadê a coxinha", `${custom} cadê`, "a coxinha", `${custom} cadê a coxinha`];
