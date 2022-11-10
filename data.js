@@ -40,6 +40,12 @@ var SoundData = [
         "release_date": '2022-11-10'
       },
       {
+        "name": "VuvuzelaAA",
+        "file": null,
+        "func": () => { vm.vuvuzelaaa() },
+        "release_date": '2022-11-10'
+      },
+      {
         "name": "Gol",
         "file": "gol-da-alemanha_1.mp3",
         "release_date": '2022-11-10'
