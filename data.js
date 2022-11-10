@@ -710,6 +710,11 @@ var SoundData = [
         "file": "agnaldo-timoteo-nem-assumido-nem-desassumido.mp3",
         "release_date": '2022-10-06'
       },
+      {
+        "name": "PLANTÃO DO VITAS",
+        "file": "plantao-do-vitas.mp3",
+        "release_date": '2022-11-10'
+      },
     ]
   },
   {
