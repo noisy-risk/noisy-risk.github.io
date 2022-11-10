@@ -43,6 +43,21 @@ var SoundData = [
         "name": "Gol",
         "file": "gol-da-alemanha_1.mp3",
         "release_date": '2022-11-10'
+      },
+      {
+        "name": "TAFAREL",
+        "file": "sai-que-e-sua-tafarel.mp3",
+        "release_date": '2022-11-10'
+      },
+      {
+        "name": "NIGUEM SABE",
+        "file": "ninguem-sabe-o-que-faz.mp3",
+        "release_date": '2022-11-10'
+      },
+      {
+        "name": "FALA MUITO!",
+        "file": "fala-muito-2.mp3",
+        "release_date": '2022-11-10'
       }
     ]
   },
