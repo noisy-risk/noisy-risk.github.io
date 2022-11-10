@@ -30,6 +30,23 @@ var SoundData = [
     ]
   },
   {
+    "name": "HEXA 2022",
+    "image": "./images/hexa 2022.png",
+    "release_date": '2022-11-10',
+    "sounds": [
+      {
+        "name": "Vuvuzela",
+        "file": "vuvuzela.mp3",
+        "release_date": '2022-11-10'
+      },
+      {
+        "name": "Gol",
+        "file": "gol-da-alemanha_1.mp3",
+        "release_date": '2022-11-10'
+      }
+    ]
+  },
+  {
     "name": "CR4QU3 N3T0",
     "image": "./images/craque-neto.png",
     "release_date": '2022-09-06',
