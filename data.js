@@ -30,6 +30,16 @@ var SoundData = [
     ]
   },
   {
+    "name": "⚽ QATAR",
+    "image": "./images/qatar.jpg",
+    "sounds": [
+      {
+        "name": "VINHETA",
+        "file": "tantantantan.mp3"
+      }
+    ]
+  },
+  {
     "name": "HEXA 2022",
     "image": "./images/hexa 2022.png",
     "release_date": '2022-11-10',
@@ -1424,7 +1434,7 @@ var SoundData = [
         "func": () => { vm.lucasBoloRandom() },
         "release_date": '2022-09-06'
       },
-	    {
+      {
         "name": "IRMAOSSSSÃOOO",
         "file": "IRMAOZAO.mp3",
         "release_date": '2022-09-01'
