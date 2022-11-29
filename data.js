@@ -1,5 +1,27 @@
 var SoundData = [
   {
+    "name": "Careca",
+    "image": "./images/ronaldo-careca.jpg",
+    "release_date": '2022-11-29',
+    "sounds": [
+      {
+        "name": "Você é careca?",
+        "file": "voce-e-careca.mp3",
+        "release_date": '2022-11-29'
+      },
+      {
+        "name": "Cala a boca careca",
+        "file": "cala-a-boca-careca.mp3",
+        "release_date": '2022-11-29'
+      },
+      {
+        "name": "Você é careca? (Avengers)",
+        "file": "voce-e-careca-avengers.mp3",
+        "release_date": '2022-11-29'
+      }
+    ]
+  },
+  {
     "name": "(♥ω♥*) Nipônicos",
     "image": "./images/shamisen.gif",
     "sounds": [
