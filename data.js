@@ -233,6 +233,11 @@ var SoundData = [
       {
         "name": "DOLLYNHO ESG ",
         "file": "dolly_ver_o_2012_converted.mp3"
+      },
+      {
+        "name": "TACA LA PETACA",
+        "file": "TacaLaPetaca.mp3",
+        "release_date": "2022-11-30"
       }
     ]
   },

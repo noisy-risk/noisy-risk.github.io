@@ -9,16 +9,16 @@ ROOT = r'U:\\DEPTO\\DTVM RISCO\\CONTROLES\\SONS\\noisy-risk.github.io\\scripts'
 
 OUT_PATH, IN_PATH= f'{ROOT}/out', f'{ROOT}/in'
 
-source_sound = AudioSegment.from_mp3(f"{IN_PATH}/cegodosolhos.mp3")
+source_sound = AudioSegment.from_mp3(f"{IN_PATH}/Chapolin - taca la petaca-QwCgu0WgGS8.mp3")
 
-_start_min, _start_sec = 0, 11
-_end_min, _end_sec = 0, 27
+_start_min, _start_sec = 0, 45
+_end_min, _end_sec = 0, 53
 
 _start = _start_min * 60 * 1000 + _start_sec * 1000
 _end  = _end_min * 60 * 1000 + _end_sec * 1000
 
 extract = source_sound[_start:_end]
 
-out_file = 'cegodosolhos'
+out_file = 'TacaLaPetaca'
 
 extract.export(f"{OUT_PATH}/{out_file}.mp3", format="mp3")
