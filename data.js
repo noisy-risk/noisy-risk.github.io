@@ -91,6 +91,11 @@ var SoundData = [
         "name": "VINHETA",
         "file": "tantantantan.mp3",
         "release_date": "2022-11-28"
+      },
+      {
+        "name": "ACABA PELO AMOR DE DEUS",
+        "file": "acaba-pelo-amor.mp3",
+        "release_date": "2022-12-01"
       }
     ]
   },
@@ -757,6 +762,21 @@ var SoundData = [
         "name": "TOC TOC",
         "file": "crazy-realistic-knocking-sound-troll-twitch-streamers_small_mYNcUdA.mp3",
         "release_date": '2022-11-10'
+      },
+      {
+        "name": "COE RAPAZIADA",
+        "file": "coe_rapaziada_completo.mp3",
+        "release_date": '2022-12-05'
+      },
+      {
+        "name": "COE RAPAZIADA (ENSURDECEDOR)",
+        "file": "coe_rapaziada_altissimo_pqp.mp3",
+        "release_date": '2022-12-05'
+      },
+      {
+        "name": "COE RAPAZIADA REMIX",
+        "file": "coe_rapaziada_remix.mp3",
+        "release_date": '2022-12-05'
       },
     ]
   },
