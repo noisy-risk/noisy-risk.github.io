@@ -96,7 +96,12 @@ var SoundData = [
         "name": "ACABA PELO AMOR DE DEUS",
         "file": "acaba-pelo-amor.mp3",
         "release_date": "2022-12-01"
-      }
+      },
+      {
+        "name": "EU NAO AGUENTO MAIS SPORTV",
+        "file": "nao_aguento_mais.mp3",
+        "release_date": "2022-12-06"
+      },
     ]
   },
   {
