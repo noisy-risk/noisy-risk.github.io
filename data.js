@@ -102,6 +102,12 @@ var SoundData = [
         "file": "nao_aguento_mais.mp3",
         "release_date": "2022-12-06"
       },
+      {
+        "name": "EU ACREDITO EH NA RAPAZIADAAAA",
+        "file": null,
+        "func": () => { vm.euAcreditoEhNaRapaziadaaaa() },
+        "release_date": "2022-12-08"
+      },
     ]
   },
   {

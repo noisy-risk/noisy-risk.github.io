@@ -429,6 +429,18 @@ var vm = new Vue({
           url: 'https://noisy-risk.github.io/'
         });
       }
+    },
+    euAcreditoEhNaRapaziadaaaa: () => {
+      setTimeout(() => {
+        vm.play({
+          "name": "RAPAZIADA",
+          "file": "rapaziadaaaaaaaa.mp3"
+        });
+      }, 1.5*1000);
+      vm.play({
+        "name": "EU ACREDITO EH NA",
+        "file": "eu acredito eh na.mp3"
+      });
     }
   }
 })
