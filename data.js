@@ -1408,6 +1408,11 @@ var SoundData = [
         "file": "AAAAA.mp3",
         "release_date": "2022-07-21"
       },
+      {
+        "name": "GLOBO ESPORTE",
+        "file": "globo_bam.mp3",
+        "release_date": "2022-12-15"
+      },
     ]
   },
   {
