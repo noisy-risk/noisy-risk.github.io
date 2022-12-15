@@ -794,6 +794,11 @@ var SoundData = [
         "file": "vinheta-ifood.mp3",
         "release_date": '2022-12-08'
       },
+      {
+        "name": "ESPORTE ESPETACULAR",
+        "file": "esporte-espetacular-musica-de-aberturaencerramento.mp3",
+        "release_date": '2022-12-15'
+      },
     ]
   },
   {
