@@ -23,7 +23,7 @@ var SoundData = [
   },
   {
     "name": "RAFAEL LOKAÇO",
-    "image": "lokasso_vei_lokasso.jpg",
+    "image": "./images/lokasso_vei_lokasso.jpg",
     "release_date": '2022-12-20',
     "sounds": [
       {
