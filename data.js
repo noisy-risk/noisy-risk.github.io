@@ -22,6 +22,43 @@ var SoundData = [
     ]
   },
   {
+    "name": "RAFAEL LOKAÇO",
+    "image": "lokasso_vei_lokasso.jpg",
+    "release_date": '2022-12-20',
+    "sounds": [
+      {
+        "name": "ORIGINAL",
+        "file": "rafael_lokasso.opus",
+        "release_date": '2022-12-20'
+      },
+      {
+        "name": "POR FAVORZINHO",
+        "file": "rafael_lokasso_por_favorzinho.opus",
+        "release_date": '2022-12-20'
+      },
+      {
+        "name": "MELHOR CONFRATERNIZACAO",
+        "file": "rafael_lokasso_melhor_confraternizacao.opus",
+        "release_date": '2022-12-20'
+      },
+      {
+        "name": "DEIXA ELE FICAR",
+        "file": "rafael_lokasso_deixa_ele_ficar.opus",
+        "release_date": '2022-12-20'
+      },
+      {
+        "name": "MELHOR EQUIPE",
+        "file": "rafael_lokasso_melhor_equipe.opus",
+        "release_date": '2022-12-20'
+      },
+      {
+        "name": "O NERDAO DA AREA",
+        "file": "rafael_lokasso_o_nerdao_da_area.opus",
+        "release_date": '2022-12-20'
+      },
+    ]
+  },
+  {
     "name": "(♥ω♥*) Nipônicos",
     "image": "./images/shamisen.gif",
     "sounds": [
@@ -1506,12 +1543,7 @@ var SoundData = [
         "name": "IRMAOSSSSÃOOO",
         "file": "IRMAOZAO.mp3",
         "release_date": '2022-09-01'
-      },
-      {
-        "name": "RAFAEL LOKAÇO DEMAIS",
-        "file": "rafael_lokasso.opus",
-        "release_date": '2022-12-20'
-      },
+      }
     ]
   },
   {
