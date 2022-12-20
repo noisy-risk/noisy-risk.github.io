@@ -1507,6 +1507,11 @@ var SoundData = [
         "file": "IRMAOZAO.mp3",
         "release_date": '2022-09-01'
       },
+      {
+        "name": "RAFAEL LOKAÇO DEMAIS",
+        "file": "rafael_lokasso.opus",
+        "release_date": '2022-12-20'
+      },
     ]
   },
   {
