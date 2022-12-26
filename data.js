@@ -89,7 +89,7 @@ var SoundData = [
     ]
   },
   {
-    "name": "HEXA 2022",
+    "name": "[RIP] HEXA 2022",
     "image": "./images/hexa 2022.png",
     "release_date": '2022-11-10',
     "sounds": [
@@ -835,6 +835,11 @@ var SoundData = [
         "name": "ESPORTE ESPETACULAR",
         "file": "esporte-espetacular-musica-de-aberturaencerramento.mp3",
         "release_date": '2022-12-15'
+      },
+      {
+        "name": "MIKE DE MOSQUEIRO",
+        "file": "Mike de Mosqueiro.mp3",
+        "release_date": '2022-12-26'
       },
     ]
   },
