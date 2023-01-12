@@ -18,6 +18,11 @@ var SoundData = [
         "name": "Você é careca? (Avengers)",
         "file": "voce-e-careca-avengers.mp3",
         "release_date": '2022-11-29'
+      },
+      {
+        "name": "careca e ...",
+        "file": "careca-e-vi-do.mp3",
+        "release_date": '2022-11-29'
       }
     ]
   },
