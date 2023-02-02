@@ -846,6 +846,11 @@ var SoundData = [
         "file": "Mike de Mosqueiro.mp3",
         "release_date": '2022-12-26'
       },
+      {
+        "name": "OLHA SE VC NAO ME AMA",
+        "file": "manoel-gomes.mp3",
+        "release_date": '2023-02-02'
+      },
     ]
   },
   {
