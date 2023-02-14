@@ -861,6 +861,11 @@ var SoundData = [
         "file": "todo-maconheiro-da-o-anel-sikera-jr-canta-musica-para-os-maconheiros-1.mp3",
         "release_date": '2023-02-14'
       },
+      {
+        "name": "SEM PAPAI NOEL",
+        "file": "sikera-junior-voce-vai-morrer-antes-do-natal-3.mp3",
+        "release_date": '2023-02-14'
+      },
     ]
   },
   {
