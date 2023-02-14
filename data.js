@@ -851,6 +851,16 @@ var SoundData = [
         "file": "manoel-gomes.mp3",
         "release_date": '2023-02-02'
       },
+      {
+        "name": "LÁ ELE",
+        "file": "la-ele.mp3",
+        "release_date": '2023-02-03'
+      },
+      {
+        "name": "O ANEL",
+        "file": "todo-maconheiro-da-o-anel-sikera-jr-canta-musica-para-os-maconheiros-1.mp3",
+        "release_date": '2023-02-14'
+      },
     ]
   },
   {
