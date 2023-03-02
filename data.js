@@ -866,6 +866,26 @@ var SoundData = [
         "file": "sikera-junior-voce-vai-morrer-antes-do-natal-3.mp3",
         "release_date": '2023-02-14'
       },
+      {
+        "name": "Depois do Brazino",
+        "file": "intro.mp3",
+        "release_date": '2023-03-02'
+      },
+      {
+        "name": "Yes Daddy",
+        "file": "yes-daddy.mp3",
+        "release_date": '2023-03-02'
+      },
+      {
+        "name": "WOW",
+        "file": "wow.mp3",
+        "release_date": '2023-03-02'
+      },
+      {
+        "name": "Bom Dia!",
+        "file": "bomdia.mp3",
+        "release_date": '2023-03-02'
+      },
     ]
   },
   {
@@ -1393,6 +1413,11 @@ var SoundData = [
         "name": "K-DOMINATING",
         "file": "kill-dominating.mp3",
         "release_date": '2022-10-27'
+      },
+      {
+        "name": "Pew Pew",
+        "file": "pew-pew.mp3",
+        "release_date": '2023-03-02'
       },
     ]
   },
