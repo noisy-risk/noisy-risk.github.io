@@ -886,6 +886,16 @@ var SoundData = [
         "file": "bomdia.mp3",
         "release_date": '2023-03-02'
       },
+      {
+        "name": "Fiz uma Baguncinha",
+        "file": "fiz-uma-baguncinha.mp3",
+        "release_date": '2023-03-02'
+      },
+      {
+        "name": "Se ficar parado faço besteira",
+        "file": "besteira.mp3",
+        "release_date": '2023-03-02'
+      },
     ]
   },
   {
@@ -1417,16 +1427,6 @@ var SoundData = [
       {
         "name": "Pew Pew",
         "file": "pew-pew.mp3",
-        "release_date": '2023-03-02'
-      },
-      {
-        "name": "Fiz uma Baguncinha",
-        "file": "fiz-uma-baguncinha.mp3",
-        "release_date": '2023-03-02'
-      },
-      {
-        "name": "Se ficar parado faço besteira",
-        "file": "besteira.mp3",
         "release_date": '2023-03-02'
       },
     ]
