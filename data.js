@@ -901,6 +901,21 @@ var SoundData = [
         "file": "dolly-estourado.mp3",
         "release_date": '2023-03-02'
       },
+      {
+        "name": "Xuxa Aniversário",
+        "file": "xuxa-aniversario-btko.mp3",
+        "release_date": '2023-03-14'
+      },
+      {
+        "name": "Djavan Aaaaaaaaaa",
+        "file": "djavan-aaaaaaaaaa.mp3",
+        "release_date": '2023-03-14'
+      },
+      {
+        "name": "Djavan Va se fude",
+        "file": "vai-se-fude-djavan.mp3",
+        "release_date": '2023-03-14'
+      },
     ]
   },
   {
