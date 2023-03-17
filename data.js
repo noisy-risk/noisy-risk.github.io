@@ -916,6 +916,11 @@ var SoundData = [
         "file": "vai-se-fude-djavan.mp3",
         "release_date": '2023-03-14'
       },
+      {
+        "name": "Isolados",
+        "file": "musica-isolados-rezendeevil-mp3cut.mp3",
+        "release_date": '2023-03-16'
+      },
     ]
   },
   {
