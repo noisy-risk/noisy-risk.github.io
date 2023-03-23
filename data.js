@@ -926,6 +926,11 @@ var SoundData = [
         "file": "e-o-naldo-ta-ali.mp3",
         "release_date": '2023-03-21'
       },
+      {
+        "name": "BREEZY",
+        "file": "naldo-breeeeeezy.mp3",
+        "release_date": '2023-03-21'
+      },
     ]
   },
   {
