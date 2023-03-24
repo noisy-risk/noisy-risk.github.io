@@ -931,6 +931,11 @@ var SoundData = [
         "file": "naldo-breeeeeezy.mp3",
         "release_date": '2023-03-21'
       },
+      {
+        "name": "AHHHHHHH",
+        "file": "wilhelmscream.mp3",
+        "release_date": '2023-03-23'
+      },
     ]
   },
   {
