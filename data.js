@@ -936,6 +936,16 @@ var SoundData = [
         "file": "wilhelmscream.mp3",
         "release_date": '2023-03-23'
       },
+      {
+        "name": "JOGO DA GALERA",
+        "file": "brazino-curto.mp3",
+        "release_date": '2023-03-28'
+      },
+      {
+        "name": "AMANCO",
+        "file": "amanco-sem-titulo1.mp3",
+        "release_date": '2023-04-04'
+      },
     ]
   },
   {
@@ -1617,6 +1627,11 @@ var SoundData = [
         "name": "IAISSU",
         "file": "nao-faca-iaissu.mp3",
         "release_date": "2022-08-23"
+      },
+      {
+        "name": "TESCNICA DE MULTIPLICASSUIUMMM",
+        "file": "tecnisca-de-multiplicassuium.mp3",
+        "release_date": "2023-04-04"
       },
     ]
   },
