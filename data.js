@@ -944,8 +944,14 @@ var SoundData = [
       {
         "name": "AMANCO",
         "file": "amanco-sem-titulo1.mp3",
-        "release_date": '2023-04-04'
+        "release_date": '2023-04-04'        
       },
+      {
+        "name": "CHINA",
+        "file": "china.mp3",
+        "release_date": '2023-04-06'        
+      },
+      
     ]
   },
   {
