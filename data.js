@@ -296,6 +296,21 @@ var SoundData = [
         "name": "TACA LA PETACA",
         "file": "TacaLaPetaca.mp3",
         "release_date": "2022-11-30"
+      },
+      {
+        "name": "BANHEIRA FULL",
+        "file": "tema-banheira-do-guguoriginal-mp3cut.mp3",
+        "release_date": "2023-04-17"
+      },
+      {
+        "name": "BANHEIRA SHORT",
+        "file": "banhaira_3s.mp3",
+        "release_date": "2023-04-17"
+      },
+      {
+        "name": "TEMPOOOO",
+        "file": "pontos-domingo.mp3",
+        "release_date": "2023-04-17"
       }
     ]
   },
