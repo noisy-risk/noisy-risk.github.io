@@ -311,6 +311,11 @@ var SoundData = [
         "name": "TEMPOOOO",
         "file": "pontos-domingo.mp3",
         "release_date": "2023-04-17"
+      },
+      {
+        "name": "VALENDO",
+        "file": "valendo-online-audio-converter.mp3",
+        "release_date": "2023-04-18"
       }
     ]
   },
@@ -968,8 +973,23 @@ var SoundData = [
       },
       {
         "name": "GEMIDAO REMIX",
-        "file": "gemidaoremix.mp3",
+        "file": "GemidaoRemix.mp3",
         "release_date": '2023-04-17'        
+      },
+      {
+        "name": "DJ AZEITONA",
+        "file": "blinding-azeitona-leod-audiotrimmer.mp3",
+        "release_date": '2023-04-18'        
+      },
+      {
+        "name": "BETO CARRERO",
+        "file": "beto.mp3",
+        "release_date": '2023-04-18'        
+      },
+      {
+        "name": "ORGANIZAÇOES TABAJARA",
+        "file": "tabajara.mp3",
+        "release_date": '2023-04-18'        
       },
     ]
   },
