@@ -991,6 +991,11 @@ var SoundData = [
         "file": "tabajara.mp3",
         "release_date": '2023-04-18'        
       },
+      {
+        "name": "GLATT",
+        "file": "risada-coringa-joaquin.mp3",
+        "release_date": '2023-05-05'        
+      },
     ]
   },
   {
