@@ -994,6 +994,7 @@ var SoundData = [
       {
         "name": "GLATT",
         "file": "risada-coringa-joaquin.mp3",
+        "classes": "felicidade",
         "release_date": '2023-05-05'        
       },
     ]
