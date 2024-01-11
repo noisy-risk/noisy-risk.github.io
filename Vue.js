@@ -422,12 +422,7 @@ var vm = new Vue({
       var filesArray = [file];
 
       if (navigator.canShare && navigator.canShare({ files: filesArray })) {
-        navigator.share({
-          text: sound.name,
-          files: filesArray,
-          title: sound.name,
-          url: 'https://noisy-risk.github.io/'
-        });
+        navigator.share({files: filesArray});
       }
     },
     euAcreditoEhNaRapaziadaaaa: () => {
